@@ -2,41 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/blog/</loc>
+    <loc>https://sinjoysaha.github.io/tags/blog/</loc>
     <lastmod>2022-11-05T20:02:45+05:30</lastmod>
   </url><url>
-    <loc>/blog/</loc>
+    <loc>https://sinjoysaha.github.io/blog/</loc>
     <lastmod>2022-11-05T20:02:45+05:30</lastmod>
   </url><url>
-    <loc>/blog/first-post/</loc>
+    <loc>https://sinjoysaha.github.io/blog/first-post/</loc>
     <lastmod>2022-11-05T20:02:45+05:30</lastmod>
   </url><url>
-    <loc>/tags/posts/</loc>
+    <loc>https://sinjoysaha.github.io/tags/posts/</loc>
     <lastmod>2022-11-05T20:02:45+05:30</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://sinjoysaha.github.io/</loc>
     <lastmod>2022-11-05T20:02:45+05:30</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://sinjoysaha.github.io/tags/</loc>
     <lastmod>2022-11-05T20:02:45+05:30</lastmod>
   </url><url>
-    <loc>/tags/datascience/</loc>
+    <loc>https://sinjoysaha.github.io/tags/datascience/</loc>
     <lastmod>2022-11-05T19:53:00+05:30</lastmod>
   </url><url>
-    <loc>/tags/projects/</loc>
+    <loc>https://sinjoysaha.github.io/tags/projects/</loc>
     <lastmod>2022-11-05T19:53:00+05:30</lastmod>
   </url><url>
-    <loc>/projects/</loc>
+    <loc>https://sinjoysaha.github.io/projects/</loc>
     <lastmod>2022-11-05T19:53:00+05:30</lastmod>
   </url><url>
-    <loc>/projects/second/</loc>
+    <loc>https://sinjoysaha.github.io/projects/second/</loc>
     <lastmod>2022-11-05T19:53:00+05:30</lastmod>
   </url><url>
-    <loc>/projects/first/</loc>
+    <loc>https://sinjoysaha.github.io/projects/first/</loc>
     <lastmod>2022-11-05T19:50:53+05:30</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>https://sinjoysaha.github.io/about/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://sinjoysaha.github.io/categories/</loc>
   </url>
 </urlset>

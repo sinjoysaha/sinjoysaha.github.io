@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Sinjoy Saha</title>
-    <link>/tags/</link>
+    <link>https://sinjoysaha.github.io/tags/</link>
     <description>Recent content in Tags on Sinjoy Saha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Nov 2022 20:02:45 +0530</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Nov 2022 20:02:45 +0530</lastBuildDate><atom:link href="https://sinjoysaha.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog</title>
-      <link>/tags/blog/</link>
+      <link>https://sinjoysaha.github.io/tags/blog/</link>
       <pubDate>Sat, 05 Nov 2022 20:02:45 +0530</pubDate>
       
-      <guid>/tags/blog/</guid>
+      <guid>https://sinjoysaha.github.io/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>posts</title>
-      <link>/tags/posts/</link>
+      <link>https://sinjoysaha.github.io/tags/posts/</link>
       <pubDate>Sat, 05 Nov 2022 20:02:45 +0530</pubDate>
       
-      <guid>/tags/posts/</guid>
+      <guid>https://sinjoysaha.github.io/tags/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>datascience</title>
-      <link>/tags/datascience/</link>
+      <link>https://sinjoysaha.github.io/tags/datascience/</link>
       <pubDate>Sat, 05 Nov 2022 19:53:00 +0530</pubDate>
       
-      <guid>/tags/datascience/</guid>
+      <guid>https://sinjoysaha.github.io/tags/datascience/</guid>
       <description></description>
     </item>
     
     <item>
       <title>projects</title>
-      <link>/tags/projects/</link>
+      <link>https://sinjoysaha.github.io/tags/projects/</link>
       <pubDate>Sat, 05 Nov 2022 19:53:00 +0530</pubDate>
       
-      <guid>/tags/projects/</guid>
+      <guid>https://sinjoysaha.github.io/tags/projects/</guid>
       <description></description>
     </item>
     
