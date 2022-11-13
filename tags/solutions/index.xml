@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Blogs on Sinjoy Saha</title>
-    <link>https://sinjoysaha.github.io/blog/</link>
-    <description>Recent content in Blogs on Sinjoy Saha</description>
+    <title>solutions on Sinjoy Saha</title>
+    <link>https://sinjoysaha.github.io/tags/solutions/</link>
+    <description>Recent content in solutions on Sinjoy Saha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Nov 2022 13:20:43 +0530</lastBuildDate><atom:link href="https://sinjoysaha.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Nov 2022 13:20:43 +0530</lastBuildDate><atom:link href="https://sinjoysaha.github.io/tags/solutions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HackerRank Regex Solutions</title>
       <link>https://sinjoysaha.github.io/blog/hackerrank-regex-solutions/</link>

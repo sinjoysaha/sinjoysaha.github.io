@@ -6,32 +6,14 @@
     <description>Recent content on Sinjoy Saha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Nov 2022 20:02:45 +0530</lastBuildDate><atom:link href="https://sinjoysaha.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Nov 2022 13:20:43 +0530</lastBuildDate><atom:link href="https://sinjoysaha.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First Post</title>
-      <link>https://sinjoysaha.github.io/blog/first-post/</link>
-      <pubDate>Sat, 05 Nov 2022 20:02:45 +0530</pubDate>
+      <title>HackerRank Regex Solutions</title>
+      <link>https://sinjoysaha.github.io/blog/hackerrank-regex-solutions/</link>
+      <pubDate>Sun, 06 Nov 2022 13:20:43 +0530</pubDate>
       
-      <guid>https://sinjoysaha.github.io/blog/first-post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Second Project</title>
-      <link>https://sinjoysaha.github.io/projects/second/</link>
-      <pubDate>Sat, 05 Nov 2022 19:53:00 +0530</pubDate>
-      
-      <guid>https://sinjoysaha.github.io/projects/second/</guid>
-      <description>This is a summary of the second project. Hope this helps.</description>
-    </item>
-    
-    <item>
-      <title>First</title>
-      <link>https://sinjoysaha.github.io/projects/first/</link>
-      <pubDate>Sat, 05 Nov 2022 19:50:53 +0530</pubDate>
-      
-      <guid>https://sinjoysaha.github.io/projects/first/</guid>
-      <description>This is the heading for first project. This is the first project.</description>
+      <guid>https://sinjoysaha.github.io/blog/hackerrank-regex-solutions/</guid>
+      <description>Solutions to all HackerRank Regex questions divided into five sections. All questions contain links to official HackerRank site for easy access. Code blocks contain copy button for quickly trying it out yourself.</description>
     </item>
     
     <item>
@@ -40,7 +22,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sinjoysaha.github.io/about/</guid>
-      <description>Hi there 👋 </description>
+      <description>Hi there 👋 🔭 I’m currently working on Image Segmentation Problems - Check out this Kaggle Notebook🧠
+🌱 I’m currently learning Transformer models 🤖
+👯 I’m looking to collaborate on Data Science projects
+💬 I speak
+✨ I use
+🤔 Check out my Solutions to HackerRank Regex Challenges
+🎥 Ask me about Movies - Check out Disney Movies Wiki Web Scraper
+📓 Check out my Kaggle Notebooks
+📬 How to reach me</description>
     </item>
     
   </channel>
