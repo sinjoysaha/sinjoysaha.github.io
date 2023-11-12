@@ -9,10 +9,10 @@
 /* styles-6.css */
 /* ======= Base ======= */
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #545E6C;
+  font-family: 'Roboto Sans', sans-serif;
+  color: #181818;
   background: #f5f5f5;
-  font-size: 14px;
+  font-size: 16px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -77,7 +77,7 @@ p {
 }
 .sidebar-wrapper .tagline {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
@@ -160,7 +160,7 @@ p {
 }
 .main-wrapper .section-title {
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
   color: #2e4049;
   position: relative;
@@ -202,7 +202,7 @@ p {
 }
 .main-wrapper .company{
   color: #3F4650;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
@@ -211,17 +211,17 @@ p {
   position: absolute;
   right: 0;
   top: 0;
-  color: #97AAC3;
+  color:#626d7c;
 }
 .main-wrapper .location {
   position: absolute;
   right: 0;
   top: 0;
-  color: #3F4650;
+  color:#3F4650;
 }
 .main-wrapper .job-title {
   margin-bottom: 10px;
-  color: #97AAC3;
+  color:#3F4650;
 }
 .main-wrapper .project-title {
   font-size: 16px;
@@ -259,7 +259,7 @@ p {
 .footer .copyright {
   line-height: 1.6;
   color: #545E6C;
-  font-size: 13px;
+  font-size: 10px;
 }
 .footer .fa-heart {
   color: #fb866a;
