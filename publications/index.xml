@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sinjoy Saha</title>
-    <link>//localhost:1313/</link>
-    <description>Recent content on Sinjoy Saha</description>
+    <title>Publications on Sinjoy Saha</title>
+    <link>//localhost:1313/publications/</link>
+    <description>Recent content in Publications on Sinjoy Saha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/publications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Artifact Segmentation and/or Uniformity Assessment of a Gamma Camera</title>
       <link>//localhost:1313/publications/2023-artifact-segmentation/</link>
@@ -32,49 +32,6 @@
       
       <guid>//localhost:1313/publications/2019-smart-health/</guid>
       <description>Abstract Traditional methods of healthcare demand the patient to visit the clinic on a regular basis. These conventional methods can be quite cumbersome for both the patient as well as the medical staff. The focus of this paper is to implement a smart IoT-based health monitoring system which uses noninvasive sensors to read different health parameters and displays it instantly on an LCD module. Additionally, the user has the option of sending the data to the cloud to store it securely.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/cv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/cv/</guid>
-      <description>[Download CV]</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/experience/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/experience/</guid>
-      <description>Work Experiences Siemens Healthineers Senior Research Engineer (Mar 2023 - Present) - Bangalore, India
-Developed a semantic segmentation pipeline for calculating tumor-stroma ratio (TSR) of histopathological whole slide images (WSI) for breast cancer prognosis based on DeepLabV3+ with a ResNet50 backbone. Optimized pipeline using ONNX, network pruning, mixed-precision quantization, color normalization, and background separation, enabling fast and accurate inference on consumer GPU. Achieved Dice co-efficient of 0.85 and IoU of 0.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>//localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/about/</guid>
-      <description>Hi there 👋 🔭 I’m working on Image Segmentation Problems - Kaggle Notebook🧠
-🌱 I’m currently learning Transformer models 🤖
-👯 I’m looking to collaborate on Data Science projects 📈
-🗨️ I speak - Python C/C++ Java HTML JavaScript
-🔍 Tools I use - Scikit-Learn Keras TensorFlow PyTorch Numpy Pandas Flask Bootstrap Jupyter Git Herou
-🤔 Check out my Solutions to HackerRank Regex Challenges
-🎥 Ask me about Movies - Check out Disney Movies Wiki Web Scraper</description>
-    </item>
-    
-    <item>
-      <title>Page Not Found</title>
-      <link>//localhost:1313/404/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/404/</guid>
-      <description>Sorry, but the page you were trying to view does not exist.</description>
     </item>
     
   </channel>
