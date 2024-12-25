@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sinjoy Saha</title>
-    <link>https://sinjoysaha.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Sinjoy Saha</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>sinjoy.saha@psu.edu (Sinjoy Saha)</managingEditor>
     <webMaster>sinjoy.saha@psu.edu (Sinjoy Saha)</webMaster>
-    <atom:link href="https://sinjoysaha.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
