@@ -2,36 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
-    <lastmod>2023-04-07T00:00:00+00:00</lastmod>
+    <loc>https://sinjoysaha.github.io/</loc>
   </url><url>
-    <loc>/publications/2023-artifact-segmentation/</loc>
-    <lastmod>2023-04-07T00:00:00+00:00</lastmod>
+    <loc>https://sinjoysaha.github.io/categories/</loc>
   </url><url>
-    <loc>/publications/</loc>
-    <lastmod>2023-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/publications/2023-drought-stress/</loc>
-    <lastmod>2023-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/publications/2019-smart-health/</loc>
-    <lastmod>2019-08-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/</loc>
-    <priority>0</priority>
-  </url><url>
-    <loc>/cv/</loc>
-  </url><url>
-    <loc>/experience/</loc>
-  </url><url>
-    <loc>/projects/</loc>
-  </url><url>
-    <loc>/about/</loc>
-  </url><url>
-    <loc>/categories/</loc>
-  </url><url>
-    <loc>/404/</loc>
-  </url><url>
-    <loc>/tags/</loc>
+    <loc>https://sinjoysaha.github.io/tags/</loc>
   </url>
 </urlset>

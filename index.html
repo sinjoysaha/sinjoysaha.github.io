@@ -4,176 +4,592 @@
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 <meta name="description" content="">
-<meta name="author" content="map[avatar:profilePic.jpg bio:Senior Research Engineer @ MI, Siemens Healthineers contact:map[list:[map[class:email icon:fa-envelope title:Email url:mailto:sinjoysaha555@gmail.com]]] details:map[list:[map[class:location icon:fa-map-marker title:Kolkata, WB, India]]] name:Sinjoy Saha social:map[list:[map[class:googelscholar icon:fas fa-graduation-cap title:Google Scholar url:https://scholar.google.com/citations?user=xNXqCc0AAAAJ&amp;hl=en] map[class:linkedin icon:fab fa-linkedin title:LinkedIn url:https://linkedin.com/in/sinjoysaha] map[class:twitter icon:fab fa-twitter-square title:Twitter url:https://twitter.com/sinjoysaha] map[class:github icon:fab fa-github title:GitHub url:https://github.com/sinjoysaha]]]]">
+<meta name="author" content="map[avatar:profilePic.jpg bio:MS CSE @ Penn State catchphrase:Building ideas into reality! contact:map[list:[map[class:email icon:fas fa-envelope title:Email url:mailto:sinjoy.saha@psu.edu]]] details:map[list:[map[class:location icon:fa-map-marker title:State College, PA, USA]]] email:sinjoy.saha@psu.edu featureurl:https://linkedin.com/in/sinjoysaha name:Sinjoy Saha resumelink:/assets/sinjoy_saha_resume.pdf social:map[list:[map[class:linkedin icon:fab fa-linkedin title:LinkedIn url:https://linkedin.com/in/sinjoysaha] map[class:twitter icon:fab fa-twitter-square title:Twitter url:https://twitter.com/sinjoysaha] map[class:github icon:fab fa-github title:GitHub url:https://github.com/sinjoysaha] map[class:googelscholar icon:fas fa-graduation-cap title:Scholar url:https://scholar.google.com/citations?user=xNXqCc0AAAAJ&amp;hl=en]]]]">
 <meta name="robots" content="index, follow">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+                
 
 
 
 
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/style.min.3f9ad2a6f9523ce512defd37951a654f2f2486f7670ee88309384491213487c0.css" integrity="sha256-P5rSpvlSPOUS3v03lRplTy8khvdnDuiDCThEkSE0h8A=" crossorigin="anonymous">
 
 
 
 
  
-<link rel="stylesheet" href="/assets/css/style.min.edda9cc2928392e7861ba94edd4a2387ed56a12466675612ea91c42152c81798.css" integrity="" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/astro.26c5950d2501c745b038409ffa009aea9aa37c9528e3598880efe2a9be9d6ffd.css" integrity="" crossorigin="anonymous">
 
-<body><div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="/">Sinjoy Saha</a></li>
-          
-            <li class="masthead__menu-item">
-              <a href="/experience/" title="Experience | Sinjoy Saha" target="">Experience</a>
-            </li>
-            <li class="masthead__menu-item">
-              <a href="/publications/" title="Publications | Sinjoy Saha" target="">Publications</a>
-            </li>
-            <li class="masthead__menu-item">
-              <a href="/projects/" title="Projects | Sinjoy Saha" target="">Projects</a>
-            </li>
-            <li class="masthead__menu-item">
-              <a href="/blog/" title="Blog | Sinjoy Saha" target="">Blog</a>
-            </li>
-            <li class="masthead__menu-item">
-              <a href="/assets/sinjoy_saha_cv.pdf" title="CV | Sinjoy Saha" target=" _blank ">CV</a>
-            </li>
-        </ul>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
-  </div>
-</div>
-    <div id="main" role="main">
-        <div class="sidebar sticky">
-    <div itemscope itemtype="http://schema.org/Person">
+<body class='flex justify-center bg-background'>
+        <main class='flex min-h-screen w-screen max-w-[60rem] flex-col items-center px-6 pb-10 pt-7 font-satoshi text-[0.92rem] leading-relaxed sm:px-10 lg:px-10'><header class="mb-12 flex w-full flex-wrap pb-3 text-sm sm:flex-nowrap sm:justify-start">
+    <nav class="relative mx-auto flex w-full items-center justify-between sm:flex sm:items-center" aria-label="global">
+        <a class="flex-none text-xl font-semibold" href="/assets/sinjoy_saha_resume.pdf" target="_blank" aria-label="Brand">resume</a>
 
-  <div class="author__avatar">
-    
-    	<img src="/assets/images/profilePic.jpg" class="author__avatar" alt="Sinjoy Saha">
-    
-  </div>
+        <div class="flex flex-row items-center justify-center gap-x-5 sm:gap-x-7">
+            <a
+                href="/"
+                class="flex-none text-[1.05rem] font-medium hover:text-foreground/75"
+                aria-label="Nav Menu Item"
+                >home</a>
+            
 
-  <div class="author__content">
-    <h3 class="author__name">Sinjoy Saha</h3>
-    <p class="author__bio">Senior Research Engineer @ MI, Siemens Healthineers</p>
-  </div>
+            <button
+                id="toggleDarkMode"
+                class="relative rounded-md border border-border p-1.5 transition-all hover:bg-border"
+            >
+                <span class="sr-only">Dark Theme</span>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:hidden dark:-rotate-90 dark:scale-0"
+                >
+                    <path
+                        fill="currentColor"
+                        d="M12 15q1.25 0 2.125-.875T15 12q0-1.25-.875-2.125T12 9q-1.25 0-2.125.875T9 12q0 1.25.875 2.125T12 15m0 1q-1.671 0-2.836-1.164T8 12q0-1.671 1.164-2.836T12 8q1.671 0 2.836 1.164T16 12q0 1.671-1.164 2.836T12 16m-7-3.5H1.5v-1H5zm17.5 0H19v-1h3.5zM11.5 5V1.5h1V5zm0 17.5V19h1v3.5zM6.746 7.404l-2.16-2.098l.695-.744l2.111 2.134zM18.72 19.438l-2.117-2.14l.652-.702l2.16 2.098zM16.596 6.746l2.098-2.16l.744.695l-2.134 2.111zM4.562 18.72l2.14-2.117l.663.652l-2.078 2.179zM12 12"
+                    ></path>
+                </svg>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    class="hidden h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:block dark:rotate-0 dark:scale-100"
+                >
+                    <path
+                        fill="currentColor"
+                        d="M12.058 20q-3.334 0-5.667-2.333Q4.058 15.333 4.058 12q0-3.038 1.98-5.27Q8.02 4.5 10.942 4.097q.081 0 .159.006t.153.017q-.506.706-.801 1.57q-.295.865-.295 1.811q0 2.667 1.866 4.533q1.867 1.867 4.534 1.867q.952 0 1.813-.295q.862-.295 1.548-.801q.012.075.018.153q.005.078.005.158q-.384 2.923-2.615 4.904T12.057 20"
+                    ></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+</header>
 
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      <li>
-        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Kolkata, WB, India
-      </li>
-        <li>
-            <a href="mailto:sinjoysaha555@gmail.com" target="_blank">
-              <i class="fa fa-fw fa-envelope" aria-hidden="true"></i> Email
-            </a>
-        </li>
-        <li>
-            <a href="https://scholar.google.com/citations?user=xNXqCc0AAAAJ&amp;hl=en" target="_blank">
-              <i class="fa-fw fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar
-            </a>
-        </li>
-        <li>
-            <a href="https://linkedin.com/in/sinjoysaha" target="_blank">
-              <i class="fa-fw fab fa-linkedin" aria-hidden="true"></i> LinkedIn
-            </a>
-        </li>
-        <li>
-            <a href="https://twitter.com/sinjoysaha" target="_blank">
-              <i class="fa-fw fab fa-twitter-square" aria-hidden="true"></i> Twitter
-            </a>
-        </li>
-        <li>
-            <a href="https://github.com/sinjoysaha" target="_blank">
-              <i class="fa-fw fab fa-github" aria-hidden="true"></i> GitHub
-            </a>
-        </li>
-    </ul>
-  </div>
-</div>
 
-</div>
 
-        <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-            <header>
-              
-              
-              
-              
-            </header>
-            <div class="page__inner-wrap">
-              <section class="page__content" itemprop="text">
-                
-                <h1 id="about-me">About Me</h1>
-<p>Data scientist with 3+ years of work experience and a proven track record of success in developing innovative solutions for complex problems in the healthcare industry. As a part of the Data Analytics team at Siemens Healthineers, made significant contributions to the field of Molecular Imaging, not only in image processing but also in natural language understanding in service analytics. Interned at multiple research universities and labs on topics including robotics, hyperspectral imaging, and federated learning, published papers in reputed conferences and journals, and successfully filed a patent for automated grading of SPECT Gamma Camera QC images.</p>
-<h2 id="news">News</h2>
-<h3 id="2024">2024</h3>
-<ul>
-<li><strong>AI for Precision Medicine</strong> (Jan 2024) | In collaboration with Siemens Healthineers<br>
-As a part of CSR project, in collaboration with folks from different modalities at Siemens Healthineers, conducted hands-on session on Image Segmentation at <a href="https://cds.iisc.ac.in/events/workshop-on-artificial-intelligence-in-precision-medicine/">AI for Precision Medicine</a> workshop at the Department of Computational and Data Sciences (CDS), IISc, Bangalore.
-<a href="https://www.linkedin.com/posts/sinjoysaha_aiinmedicine-precisionmedicine-healthcare-activity-7160501956883488769-IfQj" target="_blank">[LinkedIn]</a>
-<a href="/assets/news/202401_iisc_aipm/img1.jpg" target="_blank">[Img]</a>
-<a href="/assets/news/202401_iisc_aipm/IISc_AIPM_Cert.pdf" target="_blank">[Cert]</a></li>
-</ul>
-<h3 id="2023">2023</h3>
-<ul>
-<li><strong>Invited talk</strong> on “Introduction to AI and Data Science: Navigating the vector space” (May 2023) for first and second-year undergraduates, organized by the AI &amp; Robotics Club and IEEE Student Branch, University of Calcutta.</li>
-</ul>
-<h3 id="2022">2022</h3>
-<ul>
-<li>Mentored a team of three members on NLP topics and guided them on a project for topic modelling on software defect issues during <strong>ALP: Data Engineering Reskill Initiative</strong> (Nov 2022) at Siemens Healthineers.</li>
-</ul>
-<h2 id="achievements">Achievements</h2>
-<p>🏆 <strong>Finalist, DC Excellence Awards, Siemens Healthineers</strong> (Mar 2024)<br>
-The work on “Method for artifact segmentation and uniformity assessment of Gamma Camera Flood Images” was nominated as one of the finalists for the DC Excellence Awards, 2024.
-<a href="https://www.linkedin.com/feed/update/urn:li:activity:7196123886751563777/" target="_blank">[LinkedIn]</a></p>
-<p>🏆 <strong>Top 5, AI Innovation Sprint, Siemens Healthineers</strong> (Feb 2024)<br>
-Our idea, “iSTAR: Intelligent Ticket Assignment and Resolution” was selected as one of the top 5 winners out of 61 submitted ideas at the AI Innovation Sprint for Predictive Maintenance and Incident Management.
-<a href="https://www.linkedin.com/feed/update/urn:li:activity:7196123886751563777/" target="_blank">[LinkedIn]</a></p>
-<p>🏆 <strong>Runners-up in SCM Hackathon, DX, Siemens Healthineers</strong> (Feb 2023)<br>
-Stood 2nd out of 44 participating teams from two countries (India and Slovakia) in the 24-hour Supply Chain Management Data Science Hackathon organized by Diagnostics department within Siemens Healthineers.</p>
-<p>🎓 <strong>JBNSTS Senior Scholar</strong> (Dec 2016)<br>
-Qualified in the Jagadis Bose National Science Talent Search (<a href="https://jbnsts.ac.in/findbyyear.php">JBNSTS</a>) Examination.<br>
-Received a monthly scholarship and annual book grant throughout undergraduate studies.</p>
+<div id="main" role="main">
+    <div class="flex w-full flex-col gap-y-10">
+        <section class="flex flex-col items-center gap-y-7">
+            
+            <img src="/assets/images/profilePic.jpg" alt="Sinjoy Saha"
+                class="h-28 w-auto rounded-lg" loading="eager" width="249" height="450" decoding="async">
+            
+            <div class="flex flex-col items-center gap-y-4">
+                <h1 class="text-3xl font-bold">Sinjoy Saha</h1> <a
+                    href="https://linkedin.com/in/sinjoysaha" target="_blank"
+                    class="flex flex-row items-center gap-x-3 rounded-3xl border border-input px-4 py-2 text-sm shadow-sm transition-all hover:shadow-md">
+                    <span class="relative flex items-center justify-center"> <span
+                            class="absolute inline-flex h-2 w-2 animate-ping rounded-full border border-green-400 bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex h-2 w-2 rounded-full bg-green-400"></span> </span>
+                    <p class="font-light">Building ideas into reality!</p>
+                </a>
+                <div class="flex flex-wrap justify-center gap-x-7 gap-y-3">
+                    
+                    <div class="flex flex-row items-center justify-center gap-x-2">
+                        <i class="fa-fw fas fa-graduation-cap" aria-hidden="true"></i>
+                        <p>MS CSE @ Penn State</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-center gap-x-2"> <svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5">
+                            <path fill="currentColor"
+                                d="M12.003 11.73q.668 0 1.14-.475q.472-.475.472-1.143t-.475-1.14q-.476-.472-1.143-.472t-1.14.476q-.472.475-.472 1.143t.475 1.14q.476.472 1.143.472M12 19.677q2.82-2.454 4.458-4.991q1.638-2.538 1.638-4.39q0-2.744-1.737-4.53T12 3.981q-2.621 0-4.359 1.785t-1.737 4.53q0 1.852 1.638 4.39q1.639 2.537 4.458 4.99m0 1.343q-3.525-3.117-5.31-5.814q-1.786-2.697-1.786-4.909q0-3.173 2.066-5.234Q9.037 3 12 3t5.03 2.062q2.066 2.061 2.066 5.234q0 2.212-1.785 4.909q-1.786 2.697-5.311 5.814m0-10.904">
+                            </path>
+                        </svg>
+                        <p>State College, PA, USA</p>
+                    </div>
+                    
 
-                
-              </section>
-        
-              <footer class="page__meta">
-                
-              </footer>
+                </div>
+                <div class="flex flex-wrap justify-center gap-x-2 gap-y-3">
+                    <a class="flex flex-row items-center justify-center gap-x-2 hover:opacity-75 transition-all"
+                        href="mailto:sinjoy.saha@psu.edu" target="_blank">
+                        <i class="fa-fw fas fa-envelope" aria-hidden="true"></i> Email
+                        <p></p>
+                    </a>
+                    <a class="flex flex-row items-center justify-center gap-x-2 hover:opacity-75 transition-all"
+                        href="https://linkedin.com/in/sinjoysaha" target="_blank">
+                        <i class="fa-fw fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+                        <p></p>
+                    </a>
+                    <a class="flex flex-row items-center justify-center gap-x-2 hover:opacity-75 transition-all"
+                        href="https://twitter.com/sinjoysaha" target="_blank">
+                        <i class="fa-fw fab fa-twitter-square" aria-hidden="true"></i> Twitter
+                        <p></p>
+                    </a>
+                    <a class="flex flex-row items-center justify-center gap-x-2 hover:opacity-75 transition-all"
+                        href="https://github.com/sinjoysaha" target="_blank">
+                        <i class="fa-fw fab fa-github" aria-hidden="true"></i> GitHub
+                        <p></p>
+                    </a>
+                    <a class="flex flex-row items-center justify-center gap-x-2 hover:opacity-75 transition-all"
+                        href="https://scholar.google.com/citations?user=xNXqCc0AAAAJ&amp;hl=en" target="_blank">
+                        <i class="fa-fw fas fa-graduation-cap" aria-hidden="true"></i> Scholar
+                        <p></p>
+                    </a>
+                </div>
             </div>
-        </article>
-    </div>
-        <div class="page__footer">
-            <footer><div class="page__footer-follow">
-  <ul class="social-icons">
-     
-    <li><strong>Follow</strong></li>
-    
-    
-        <li class="googelscholar"><i class="fab fas fa-graduation-cap" aria-hidden="true"></i><a href="https://scholar.google.com/citations?user=xNXqCc0AAAAJ&amp;hl=en" target="_blank"> Google Scholar</a></li>
-    
-        <li class="linkedin"><i class="fab fab fa-linkedin" aria-hidden="true"></i><a href="https://linkedin.com/in/sinjoysaha" target="_blank"> LinkedIn</a></li>
-    
-        <li class="twitter"><i class="fab fab fa-twitter-square" aria-hidden="true"></i><a href="https://twitter.com/sinjoysaha" target="_blank"> Twitter</a></li>
-    
-        <li class="github"><i class="fab fab fa-github" aria-hidden="true"></i><a href="https://github.com/sinjoysaha" target="_blank"> GitHub</a></li>
-    
-  </ul>
-</div>
+        </section>
+        <section class="flex flex-col gap-y-5 md:flex-row md:gap-y-0">
+            <div class="text-xl font-semibold md:w-1/3">
+                <h2>about</h2>
+            </div>
+            <div class="flex flex-col gap-y-3 md:w-2/3">
+                <p class="text-muted-foreground">
+                    Sinjoy is a first year Masters student in Computer Science and Engineering at the Pennsylvania State
+                    University. His courses are focused on design and analysis of algorithms, computer architecture,
+                    machine learning, computer vision and NLP.
+                </p>
 
-<div class="page__footer-copyright">&copy; 2024 Sinjoy Saha. Powered by <a href="http://gohugo.io" rel="nofollow">Hugo</a> &amp; <a href="https://github.com/sinjoysaha/hugo-academicpages">Hugo AcademicPages</a>. Inspired by <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div></footer>
-        </div><script src="/assets/js/main.min.js"></script>
+                <p class="text-muted-foreground">
+                    He joined the Human Language Technologies Lab, led by <a href="https://shomir.net/" target="_blank"
+                        class="italic underline underline-offset-4 transition-all hover:font-semibold hover:opacity-75">Dr. Shomir Wilson</a>, as a student researcher. He
+                    is working on improving <a href="https://privaseer.ist.psu.edu/" target="_blank"
+                    class="italic underline underline-offset-4 transition-all hover:font-semibold hover:opacity-75">PrivaSeer</a>, a privacy policy search engine of ~3.1 million privacy policies.
+                    He is also involved analysis of legal documents using LLMs to find contradicitons and
+                    inconsistencies in such
+                    documents. His research interests broadly span the domains of Natural Language Processing, Machine
+                    Learning and
+                    AI in large-scale document analysis.
+                </p>
+
+                <p class="text-muted-foreground">
+                    Prior to joining Penn State, Sinjoy worked as a Senior Research Engineer at Siemens Healthineers. As
+                    part of the Data Analytics team, his contributions spanned multiple projects in image and language
+                    processing. He designed and developed an automated grading system of gamma camera images, which led
+                    to a patent filing.
+                </p>
+                <p class="text-muted-foreground">
+                    He has prior experience in fine-tuning existing LMs for downstream tasks like entity
+                    recognition,
+                    clustering, retrieval and re-ranking for semantic search. He led the deployment of a on-prem search and
+                    summarization engine
+                    for recommending corrective actions to service engineers, based on historic service tickets, which helped in
+                    reducing
+                    downtime and saving license costs. His contributed to automated analysis of failure modes across the installed base
+                    to monitor trends in KPIs over time such as service costs, parts replaced and downtime, leading to the redesign of a
+                    SPECT subcomponent.
+                
+                </p>
+                <p class="text-muted-foreground">
+                    He had been a research intern at Sensordrops Networks (incubated at IIT Kharagpur), where he worked on improving federated learning for non-IID datasets, and at the Plant
+                    Vision Lab, University of Nebraska-Lincoln, where he worked on hyperspectral image analysis which led to a journal publication.
+                </p>
+                <p class="text-muted-foreground">
+                    Check out his <a href="https://github.com/sinjoysaha" target="_blank"
+                        class="italic underline underline-offset-4 transition-all hover:font-semibold hover:opacity-75">GitHub</a>
+                    profile!
+                </p>
+            </div>
+        </section>
+        
+        <section class="flex flex-col gap-y-5 md:flex-row md:gap-y-0">
+            <div class="text-xl font-semibold md:w-1/3">
+                <h2>work<br>experience</h2>
+            </div>
+            <div class="flex flex-col gap-y-3 md:w-2/3">
+                <div class="relative rounded-2xl border border-border bg-primary-foreground px-5 py-3"><img
+                        src="/assets/images/siemens-healthineers-logo.png" alt="Senior Engineer - Research and Technology"
+                        class="mb-3 md:absolute md:mb-0 h-12 w-auto md:-left-16" loading="eager" width="249"
+                        height="450" decoding="async">
+                    <div class="flex flex-col gap-y-1.5">
+                        <div class="flex flex-col gap-y-0.5">
+                            <h1 class="text-md font-medium">Senior Engineer - Research and Technology</h1>
+                            <h2 class="text-sm text-muted-foreground">Siemens Healthineers, Bangalore, KA</h2>
+                            <h2 class="text-sm text-muted-foreground">Mar 2023 - Aug 2024</h2>
+                        </div>
+                        <ul class="ml-4 list-disc text-muted-foreground">
+                            <li>
+                                Fine-tuned a Siamese BERT network on query-result pairs for re-ranking search results and obtained NDCG at 10 of 0.71.
+                            </li>
+                            <li>
+                                Led the deployment of a search API using fastAPI on AWS cloud, leveraging on-premise LLM and Milvus VectorDB to serve RAG pipelines and low-code platforms like Power App and Teams chatbot, saving $20,000 per annum in license costs.
+                            </li>
+                            <li>
+                                Designed semi-supervised system for identifying failure modes from service tickets using Named Entity Recognition (NER), HDBSCAN clustering and generative labelling by Orca-2, leading to an invention disclosure.
+                            </li>
+                            <li>
+                                Created a Power BI dashboard for visualizing failure modes across installed base and monitor trends in KPIs over time such as service costs, parts replaced and downtime, leading to the redesign of a SPECT subcomponent.
+                            </li>
+                            <li>
+                                Developed histopathology WSI segmentation model utilizing DeepLabV3&#43; and ResNet50 (Dice 0.85, IoU 0.63). Optimized using ONNX, pruning, quantization, normalization and background separation, achieving sub-15 minute inference.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative rounded-2xl border border-border bg-primary-foreground px-5 py-3"><img
+                        src="/assets/images/siemens-healthineers-logo.png" alt="Engineer - Research and Technology"
+                        class="mb-3 md:absolute md:mb-0 h-12 w-auto md:-left-16" loading="eager" width="249"
+                        height="450" decoding="async">
+                    <div class="flex flex-col gap-y-1.5">
+                        <div class="flex flex-col gap-y-0.5">
+                            <h1 class="text-md font-medium">Engineer - Research and Technology</h1>
+                            <h2 class="text-sm text-muted-foreground">Siemens Healthineers, Bangalore, KA</h2>
+                            <h2 class="text-sm text-muted-foreground">Dec 2021 - Feb 2023</h2>
+                        </div>
+                        <ul class="ml-4 list-disc text-muted-foreground">
+                            <li>
+                                Implemented end-to-end Cause and Action phrase extraction from service tickets leveraging roBERTa and NER, increasing average ticket coverage in search results from 14% to 52% compared to earlier POS tagging model.
+                            </li>
+                            <li>
+                                Developed an unsupervised method leveraging Word2Vec embeddings and DBSCAN to cluster domain-specific words into a thesaurus, increasing clusters from 15 to 346 and enhancing full-text SQL search for PET/SPECT service tickets.
+                            </li>
+                            <li>
+                                Engineered a novel image feature set for Random Forest classifier and an ROI-agnostic artifact segmentation model for automated grading of SPECT QC images, improving F1-score from 0.46 to 0.75, resulting in a patent filing.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative rounded-2xl border border-border bg-primary-foreground px-5 py-3"><img
+                        src="/assets/images/cognizant-logo.jpeg" alt="Programmer Analyst Trainee"
+                        class="mb-3 md:absolute md:mb-0 h-12 w-auto md:-left-16" loading="eager" width="249"
+                        height="450" decoding="async">
+                    <div class="flex flex-col gap-y-1.5">
+                        <div class="flex flex-col gap-y-0.5">
+                            <h1 class="text-md font-medium">Programmer Analyst Trainee</h1>
+                            <h2 class="text-sm text-muted-foreground">Cognizant Technology Solutions, Kolkata, WB</h2>
+                            <h2 class="text-sm text-muted-foreground">Nov 2020 - Sep 2021</h2>
+                        </div>
+                        <ul class="ml-4 list-disc text-muted-foreground">
+                            <li>
+                                Developed and executed automated testing scripts using Java Selenium, TestNG, and JUnit to ensure quality of API and web apps.
+                            </li>
+                            <li>
+                                Performed requirement analysis and test design for web/mobile apps and worked with developers to resolve defects.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col gap-y-5 md:flex-row md:gap-y-0">
+            <div class="text-xl font-semibold md:w-1/3">
+                <h2>research<br>experience</h2>
+            </div>
+            <div class="flex flex-col gap-y-3 md:w-2/3">
+                <div class="relative rounded-2xl border border-border bg-primary-foreground px-5 py-3"><img
+                        src="/assets/images/penn-state-logo.webp" alt="Graduate Researcher"
+                        class="mb-3 md:absolute md:mb-0 h-12 w-auto md:-left-16" loading="eager" width="249"
+                        height="450" decoding="async">
+                    <div class="flex flex-col gap-y-1.5">
+                        <div class="flex flex-col gap-y-0.5">
+                            <h1 class="text-md font-medium">Graduate Researcher</h1>
+                            <h2 class="text-sm text-muted-foreground">Human Language Technologies Lab, Penn State</h2>
+                            <h2 class="text-sm text-muted-foreground">Sep 2024 - Present</h2>
+                        </div>
+                        <ul class="ml-4 list-disc text-muted-foreground">
+                            <li>
+                                Optimized visualization rendering latency for PrivaSeer, a privacy policy search engine containing ~3.1 million policies.
+                            </li>
+                            <li>
+                                Leveraged on-premise Llama 3.1-8B-it to extract contradictory and inconsistent statements from privacy policies in JSON format.
+                            </li>
+                            <li>
+                                Designed output parsing and self-verification systems to filter incorrectly formatted outputs and reduce hallucinations.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative rounded-2xl border border-border bg-primary-foreground px-5 py-3"><img
+                        src="/assets/images/unl-logo.png" alt="Research Intern"
+                        class="mb-3 md:absolute md:mb-0 h-12 w-auto md:-left-16" loading="eager" width="249"
+                        height="450" decoding="async">
+                    <div class="flex flex-col gap-y-1.5">
+                        <div class="flex flex-col gap-y-0.5">
+                            <h1 class="text-md font-medium">Research Intern</h1>
+                            <h2 class="text-sm text-muted-foreground">Plant Vision Lab, University of Nebraska-Lincoln</h2>
+                            <h2 class="text-sm text-muted-foreground">Jul 2021 - Dec 2021</h2>
+                        </div>
+                        <ul class="ml-4 list-disc text-muted-foreground">
+                            <li>
+                                Developed two methods to predict onset of plant drought stress using Dynamic Time Warping (DTW) algorithm on computed phenotypes and 1D-CNN for temporal stress propagation on hyperspectral images (F1: 0.98, mean soil water content (SWC) corr: -0.85), leading to a journal publication.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative rounded-2xl border border-border bg-primary-foreground px-5 py-3"><img
+                        src="/assets/images/IIT-Kgp-logo.webp" alt="Research Intern"
+                        class="mb-3 md:absolute md:mb-0 h-12 w-auto md:-left-16" loading="eager" width="249"
+                        height="450" decoding="async">
+                    <div class="flex flex-col gap-y-1.5">
+                        <div class="flex flex-col gap-y-0.5">
+                            <h1 class="text-md font-medium">Research Intern</h1>
+                            <h2 class="text-sm text-muted-foreground">Sensordrops Networks Pvt. Ltd., IIT Kharagpur</h2>
+                            <h2 class="text-sm text-muted-foreground">Jul 2021 - Dec 2021</h2>
+                        </div>
+                        <ul class="ml-4 list-disc text-muted-foreground">
+                            <li>
+                                Introduced a novel algorithm for Federated Learning in non-IID data by clustering on client data statistics, surpassing FedAvg accuracy by 2% and reducing aggregation time by 67% compared to clustering on local weights.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col gap-y-5 md:flex-row md:gap-y-0">
+            <div class="text-xl font-semibold md:w-1/3">
+                <h2>education</h2>
+            </div>
+            <div class="flex flex-col gap-y-3 md:w-2/3">
+                <div class="relative rounded-2xl border border-border bg-primary-foreground px-5 py-3"><img
+                        src="/assets/images/penn-state-logo.webp" alt="Masters of Science in Computer Science and Engineering"
+                        class="mb-3 md:absolute md:mb-0 h-12 w-auto md:-left-16" loading="eager" width="249"
+                        height="450" decoding="async">
+                    <div class="flex flex-col gap-y-1.5">
+                        <div class="flex flex-col gap-y-0.5">
+                            <h1 class="text-md font-medium">Masters of Science in Computer Science and Engineering</h1>
+                            <h2 class="text-sm text-muted-foreground">Pennsylvania State University - University Park, PA</h2>
+                            <h2 class="text-sm text-muted-foreground">Aug 2024 - May 2026</h2>
+                        </div>
+                        <ul class="ml-4 list-disc text-muted-foreground">
+                            <li>
+                                Courses: Machine Learning - Tools and Algorithms, Design and Analysis of Algorithms, Fundamentals of Computer Architecture
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative rounded-2xl border border-border bg-primary-foreground px-5 py-3"><img
+                        src="/assets/images/univ-of-calcutta-logo.png" alt="Bachelor of Technology in Electronics and Communication Engineering"
+                        class="mb-3 md:absolute md:mb-0 h-12 w-auto md:-left-16" loading="eager" width="249"
+                        height="450" decoding="async">
+                    <div class="flex flex-col gap-y-1.5">
+                        <div class="flex flex-col gap-y-0.5">
+                            <h1 class="text-md font-medium">Bachelor of Technology in Electronics and Communication Engineering</h1>
+                            <h2 class="text-sm text-muted-foreground">Pennsylvania State University - University Park, PA</h2>
+                            <h2 class="text-sm text-muted-foreground">Oct 2016 - Sep 2020</h2>
+                        </div>
+                        <ul class="ml-4 list-disc text-muted-foreground">
+                            <li>
+                                Courses: Engineering Math – I &amp; II, Data Structures &amp; Algorithms, Computer Organization &amp; Architecture, Microprocessors, Analog &amp; Digital Circuits, Control Theory, Digital Signal Processing and Communication Theory.
+                            </li>
+                            <li>
+                                Thesis: Environmental Monitoring using SFCW Radar for Minor Crack Detection
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col gap-y-5 md:flex-row md:gap-y-0">
+            <div class="text-xl font-semibold md:w-1/3">
+                <h2>publications</h2>
+                <p class="text-sm font-medium text-muted-foreground">(and patent under review)</p>
+            </div>
+            <div class="flex flex-col gap-y-3 md:w-2/3">
+                <div class="flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0">
+                    <a class="w-full flex flex-col gap-y-3 rounded-2xl border border-border bg-primary-foreground transition-all hover:border-foreground/25 hover:shadow-sm"
+                        href="" target="_blank">
+                        <img src="/assets/pub/images/2023-artifact-segmentation.png" alt="Artifact Segmentation and/or Uniformity Assessment of a Gamma Camera"
+                            class="h-48 w-full rounded-2xl rounded-bl-none rounded-br-none object-cover" loading="eager"
+                            width="1024" height="1024" decoding="async">
+                        <div class="flex flex-col gap-y-0.5 px-5 py-4">
+                            <h1 class="text-md  font-medium">Artifact Segmentation and/or Uniformity Assessment of a Gamma Camera</h1>
+                            <h2 class="text-sm text-muted-foreground">Daga S., Saha S., Crawford T. E., Khan K., Morris B.</h2>
+                            <h2 class="text-sm text-muted-foreground">USPTO, 2023</h2>
+                            <h2 class="text-sm text-muted-foreground"></h2>
+                            
+
+                            
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0">
+                    <a class="w-full flex flex-col gap-y-3 rounded-2xl border border-border bg-primary-foreground transition-all hover:border-foreground/25 hover:shadow-sm"
+                        href="https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2023.1003150/full" target="_blank">
+                        <img src="/assets/pub/images/2023-drought-stress.png" alt="Drought stress prediction and propagation using time series modeling on multimodal plant image sequences"
+                            class="h-48 w-full rounded-2xl rounded-bl-none rounded-br-none object-cover" loading="eager"
+                            width="1024" height="1024" decoding="async">
+                        <div class="flex flex-col gap-y-0.5 px-5 py-4">
+                            <h1 class="text-md  font-medium">Drought stress prediction and propagation using time series modeling on multimodal plant image sequences</h1>
+                            <h2 class="text-sm text-muted-foreground">Das Choudhury, S.*, Saha, S.*, Samal, A., Mazis, A. and Awada, T.</h2>
+                            <h2 class="text-sm text-muted-foreground">Frontiers in Plant Science, 14, p.1003150, 2023</h2>
+                            <h2 class="text-sm text-muted-foreground">The paper introduces two novel algorithms for predicting and propagating drought stress in plants using image sequences captured by cameras in two modalities, i.e., visible light and hyperspectral.</h2>
+                            
+
+                            
+                            
+                            <br>
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path
+                                        d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8">
+                                    </path>
+                                </g>
+                            </svg>
+                            
+                            
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0">
+                    <a class="w-full flex flex-col gap-y-3 rounded-2xl border border-border bg-primary-foreground transition-all hover:border-foreground/25 hover:shadow-sm"
+                        href="https://doi.org/10.1007/978-981-13-9042-5_8" target="_blank">
+                        <img src="/assets/pub/images/2019-smart-health.png" alt="Smart Health Monitoring System for Temperature, Blood Oxygen Saturation, and Heart Rate Sensing with Embedded Processing and Transmission Using IoT Platform"
+                            class="h-48 w-full rounded-2xl rounded-bl-none rounded-br-none object-cover" loading="eager"
+                            width="1024" height="1024" decoding="async">
+                        <div class="flex flex-col gap-y-0.5 px-5 py-4">
+                            <h1 class="text-md  font-medium">Smart Health Monitoring System for Temperature, Blood Oxygen Saturation, and Heart Rate Sensing with Embedded Processing and Transmission Using IoT Platform</h1>
+                            <h2 class="text-sm text-muted-foreground">Basu, S., Saha, S., Pandit, S. and Barman, S.</h2>
+                            <h2 class="text-sm text-muted-foreground">Computational Intelligence in Pattern Recognition: Proceedings of CIPR 2019 (pp. 81-91). Springer Singapore. Part of book series: Advances in Intelligent Systems and Computing (AISC, vol. 999), 2019</h2>
+                            <h2 class="text-sm text-muted-foreground"></h2>
+                            
+
+                            
+                            
+                            <br>
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path
+                                        d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8">
+                                    </path>
+                                </g>
+                            </svg>
+                            
+                            
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col gap-y-5 md:flex-row md:gap-y-0">
+            <div class="text-xl font-semibold md:w-1/3">
+                <h2>projects</h2>
+            </div>
+            <div class="flex flex-col gap-y-3 md:w-2/3">
+                
+                <div class="flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0">
+                    
+                    <a class="w-full sm:w-1/2 flex flex-col gap-y-3 rounded-2xl border border-border bg-primary-foreground transition-all hover:border-foreground/25 hover:shadow-sm"
+                        href="https://sinjoysaha.github.io/tiktokenizer-js/" target="_blank"> <img src="/assets/projects/images/tiktokenizer-js.png"
+                            alt="Tiktokenizer.js"
+                            class="h-48 w-full rounded-2xl rounded-bl-none rounded-br-none object-cover" loading="eager"
+                            width="1024" height="1024" decoding="async">
+                        <div class="flex flex-col gap-y-0.5 px-5 py-4">
+                            <h1 class="text-md font-medium">Tiktokenizer.js</h1>
+                            <h2 class="text-sm text-muted-foreground">Developed a static site in pure JavaScript for visualizing the GPT-2 Byte-Pair Encoding (BPE) tokenization process, replicating official OpenAI API</h2>
+                            <br>
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path
+                                        d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                    
+                
+                    <a class="w-full sm:w-1/2 flex flex-col gap-y-3 rounded-2xl border border-border bg-primary-foreground transition-all hover:border-foreground/25 hover:shadow-sm"
+                        href="https://www.kaggle.com/code/sinjoysaha/federated-learning-mnist-cifar-10" target="_blank"> <img src="/assets/projects/images/federated-learning.jpeg"
+                            alt="Federated Learning - MNIST"
+                            class="h-48 w-full rounded-2xl rounded-bl-none rounded-br-none object-cover" loading="eager"
+                            width="1024" height="1024" decoding="async">
+                        <div class="flex flex-col gap-y-0.5 px-5 py-4">
+                            <h1 class="text-md font-medium">Federated Learning - MNIST</h1>
+                            <h2 class="text-sm text-muted-foreground">Implementated Federated Averaging (FedAvg) algorithm on MNIST dataset using TensorFlow and Keras</h2>
+                            <br>
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path
+                                        d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                    
+                </div>
+                
+                
+                <div class="flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0">
+                    
+                    <a class="w-full sm:w-1/2 flex flex-col gap-y-3 rounded-2xl border border-border bg-primary-foreground transition-all hover:border-foreground/25 hover:shadow-sm"
+                        href="https://www.kaggle.com/code/sinjoysaha/pspnet-brain-mri/" target="_blank"> <img src="/assets/projects/images/brain-mri-pspnet.png"
+                            alt="Brain Tumor Segmentation from MRI using PSPNet"
+                            class="h-48 w-full rounded-2xl rounded-bl-none rounded-br-none object-cover" loading="eager"
+                            width="1024" height="1024" decoding="async">
+                        <div class="flex flex-col gap-y-0.5 px-5 py-4">
+                            <h1 class="text-md font-medium">Brain Tumor Segmentation from MRI using PSPNet</h1>
+                            <h2 class="text-sm text-muted-foreground">Demonstrated efficacy of PSPNet for segmentation of brain tumors from MRI data, achieving Dice: 0.66 and IoU: 0.552</h2>
+                            <br>
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path
+                                        d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                    
+            </div>
+        </section>
+
+        
+
+        
+    </div>
+</div><footer class="mx-auto mt-24 w-full">
+    <div class="border-t border-border pt-5">
+        <div
+            class="flex flex-col items-center gap-y-3 sm:flex sm:flex-row sm:items-center sm:justify-between sm:gap-y-0">
+            <div class="flex gap-x-4 text-sm text-muted-foreground">
+                <p class="">© 2024. Built using <a href="https://gohugo.io/" class="underline">Hugo</a>. Inspired from
+                    <a href="https://github.com/srleom/astro-theme-resume" class="underline">astro-theme-resume</a>.</p>
+            </div>
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-x-4"> <a
+                        class="inline-block text-muted-foreground transition-all hover:text-muted-foreground/75"
+                        href="mailto:sinjoy.saha@psu.edu"> <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
+                        </svg> </a>
+                    <a class="inline-block text-muted-foreground transition-all hover:text-muted-foreground/75"
+                        href="/assets/sinjoy_saha_resume.pdf" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6z"></path>
+                            <path d="M14 3v5h5M16 13H8M16 17H8M10 9H8"></path>
+                        </svg> </a>
+                    <a class="inline-block text-muted-foreground transition-all hover:text-muted-foreground/75"
+                        href="https://linkedin.com/in/sinjoysaha"> <svg class="h-4 w-4 flex-shrink-0"
+                            xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                            <path fill="currentColor"
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248c-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586c.173-.431.568-.878 1.232-.878c.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252c-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z">
+                            </path>
+                        </svg> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer></main><script src="/assets/js/main.min.js"></script>
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TDS38QPM4D"></script>
@@ -183,5 +599,62 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-TDS38QPM4D');
+</script>
+
+<script>
+    function getCurrentTheme() {
+        return localStorage.getItem("theme");
+    }
+    const toggleDarkModeButton = document.getElementById("toggleDarkMode");
+
+    toggleDarkModeButton?.addEventListener("click", () => {
+        const toggleDarkModeEvent = new CustomEvent("theme-change", {
+            detail: { theme: getCurrentTheme() === "light" ? "dark" : "light" },
+        });
+        document.dispatchEvent(toggleDarkModeEvent);
+    });
+</script>
+
+<script is:inline>
+    const lightModePref = window.matchMedia('(prefers-color-scheme: light)')
+
+    
+    function getUserPref() {
+        const storedTheme = localStorage.getItem('theme') ?? undefined
+        return storedTheme || (lightModePref.matches ? 'light' : 'dark')
+    }
+
+    function setTheme(newTheme) {
+        if (newTheme !== 'light' && newTheme !== 'dark') {
+            return console.log(`Invalid theme value '${newTheme}' received. Expected 'light' or 'dark'.`)
+        }
+
+        localStorage.setItem('theme', newTheme)
+
+        const root = document.documentElement
+
+        
+        if (newTheme === 'dark' && root.classList.contains('dark')) {
+            return
+        } else if (newTheme === 'light' && !root.classList.contains('dark')) {
+            return
+        }
+
+        root.classList.toggle('dark')
+    }
+
+    
+    setTheme(getUserPref())
+
+    
+    document.addEventListener('astro:after-swap', () => setTheme(getUserPref()))
+
+    
+    document.addEventListener('theme-change', (e) => {
+        setTheme(e.detail.theme)
+    })
+
+    
+    lightModePref.addEventListener('change', (e) => setTheme(e.matches ? 'light' : 'dark'))
 </script></body>
 </html>
