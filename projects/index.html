@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Categories • Sinjoy Saha</title>
+<title>Projects • Sinjoy Saha</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -82,43 +82,116 @@
 </header>
 
 
+
+
 <div class="w-full">
-  <a class="inline-flex items-center gap-x-1 rounded-lg bg-primary-foreground border border-border px-2 py-1 text-sm transition-all hover:bg-input"
-    href="/"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
-      <path fill="currentColor" d="m6.921 12.5l5.792 5.792L12 19l-7-7l7-7l.713.708L6.921 11.5H19v1z"></path>
-    </svg>
-    <p>Back</p>
-  </a>
-  <h1 class="mb-6 mt-5 text-2xl font-bold">Categories</h1>
-  
-  <div class="grid gap-y-16 sm:grid-cols-[3fr_1fr] sm:gap-x-8">
-    <section aria-label="Blog posts list">
-      <ul style="list-style: none; padding: 0;">
-        
-      </ul>
-    </section>
-    <aside>
-      <h2 class="mb-4 flex items-center text-lg font-semibold"> <svg aria-hidden="true" class="h-6 w-6" fill="none"
-          stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0h24v24H0z" fill="none" stroke="none"></path>
-          <path
-            d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z">
-          </path>
-          <path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path>
-          <path d="M6 9h-.01"></path>
+    <a class="inline-flex items-center gap-x-1 rounded-lg bg-primary-foreground border border-border px-2 py-1 text-sm transition-all hover:bg-input"
+        href="/"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m6.921 12.5l5.792 5.792L12 19l-7-7l7-7l.713.708L6.921 11.5H19v1z"></path>
         </svg>
-        Tags
-      </h2>
-      <ul class="text-bgColor flex flex-wrap gap-2">
-        
-      </ul>
-      <span class="mt-4 block sm:text-end"> <a aria-label="View all blog categories" class="" href="/tags/"
-          data-astro-prefetch="">
-          View all →
-        </a> </span>
-    </aside>
-  </div>
+        <p>Back</p>
+    </a>
+    <h1 class="mb-6 mt-5 text-2xl font-bold">Projects</h1>
+    <section class="flex flex-col gap-y-5 md:flex-row md:gap-y-0">
+        <div class="flex flex-col gap-y-3">
+            
+            <div class="flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0">
+                
+                <a class="w-full sm:w-1/2 flex flex-col gap-y-3 rounded-2xl border border-border bg-primary-foreground transition-all hover:border-foreground/25 hover:shadow-sm"
+                    href="https://github.com/sinjoysaha/cse584-ml-psu-f24/tree/main/midterm-project" target="_blank"> <img src="/assets/projects/images/mgt-attribution.jpg"
+                        alt="Machine-Generated Text Attribution" class="h-48 w-full rounded-2xl rounded-bl-none rounded-br-none object-cover"
+                        loading="eager" width="1024" height="1024" decoding="async">
+                    <div class="flex flex-col gap-y-0.5 px-5 py-4">
+                        <h1 class="text-md font-medium">Machine-Generated Text Attribution</h1>
+                        <h2 class="text-sm text-muted-foreground">Trained BERT Sequence classifier on a novel dataset created using 5 generative models (GPT-2-small, GPT-2XL, Phi-2, Falcon-7B, Mistral-7B-it) by prompting with text sourced from Wikipedia and GSM8K Math dataset, achieving F1-score of 0.65.  and studied the impact of input length, prompt domain, and LLM parameter size on attribution accuracy.</h2>
+                        <br>
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <g fill="none" fill-rule="evenodd">
+                                <path
+                                    d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                
+            
+                <a class="w-full sm:w-1/2 flex flex-col gap-y-3 rounded-2xl border border-border bg-primary-foreground transition-all hover:border-foreground/25 hover:shadow-sm"
+                    href="https://sinjoysaha.github.io/tiktokenizer-js/" target="_blank"> <img src="/assets/projects/images/tiktokenizer-js.png"
+                        alt="Tiktokenizer.js" class="h-48 w-full rounded-2xl rounded-bl-none rounded-br-none object-cover"
+                        loading="eager" width="1024" height="1024" decoding="async">
+                    <div class="flex flex-col gap-y-0.5 px-5 py-4">
+                        <h1 class="text-md font-medium">Tiktokenizer.js</h1>
+                        <h2 class="text-sm text-muted-foreground">Developed a static site in pure JavaScript for visualizing the GPT-2 Byte-Pair Encoding (BPE) tokenization process, replicating official OpenAI API</h2>
+                        <br>
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <g fill="none" fill-rule="evenodd">
+                                <path
+                                    d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                
+            </div>
+            
+            
+            <div class="flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0">
+                
+                <a class="w-full sm:w-1/2 flex flex-col gap-y-3 rounded-2xl border border-border bg-primary-foreground transition-all hover:border-foreground/25 hover:shadow-sm"
+                    href="https://www.kaggle.com/code/sinjoysaha/federated-learning-mnist-cifar-10" target="_blank"> <img src="/assets/projects/images/federated-learning.jpeg"
+                        alt="Federated Learning - MNIST" class="h-48 w-full rounded-2xl rounded-bl-none rounded-br-none object-cover"
+                        loading="eager" width="1024" height="1024" decoding="async">
+                    <div class="flex flex-col gap-y-0.5 px-5 py-4">
+                        <h1 class="text-md font-medium">Federated Learning - MNIST</h1>
+                        <h2 class="text-sm text-muted-foreground">Implementated Federated Averaging (FedAvg) algorithm on MNIST dataset using TensorFlow and Keras</h2>
+                        <br>
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <g fill="none" fill-rule="evenodd">
+                                <path
+                                    d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                
+            
+                <a class="w-full sm:w-1/2 flex flex-col gap-y-3 rounded-2xl border border-border bg-primary-foreground transition-all hover:border-foreground/25 hover:shadow-sm"
+                    href="https://www.kaggle.com/code/sinjoysaha/pspnet-brain-mri/" target="_blank"> <img src="/assets/projects/images/brain-mri-pspnet.png"
+                        alt="Brain Tumor Segmentation from MRI using PSPNet" class="h-48 w-full rounded-2xl rounded-bl-none rounded-br-none object-cover"
+                        loading="eager" width="1024" height="1024" decoding="async">
+                    <div class="flex flex-col gap-y-0.5 px-5 py-4">
+                        <h1 class="text-md font-medium">Brain Tumor Segmentation from MRI using PSPNet</h1>
+                        <h2 class="text-sm text-muted-foreground">Demonstrated efficacy of PSPNet for segmentation of brain tumors from MRI data, achieving Dice: 0.66 and IoU: 0.552</h2>
+                        <br>
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <g fill="none" fill-rule="evenodd">
+                                <path
+                                    d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                
+            </div>
+            
+        </div>
+    </section>
 </div><footer class="mx-auto mt-24 w-full">
 
     <div class="border-t border-border pt-5">
