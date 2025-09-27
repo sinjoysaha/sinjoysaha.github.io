@@ -1,29 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sinjoy Saha</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Sinjoy Saha</description>
+    <title>Active Learning on Sinjoy Saha</title>
+    <link>http://localhost:1313/tags/active-learning/</link>
+    <description>Recent content in Active Learning on Sinjoy Saha</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>sinjoy.saha@psu.edu (Sinjoy Saha)</managingEditor>
     <webMaster>sinjoy.saha@psu.edu (Sinjoy Saha)</webMaster>
-    <lastBuildDate>Thu, 27 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200&#43; FPS</title>
-      <link>http://localhost:1313/paperstack/lightgaussian/</link>
-      <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate><author>sinjoy.saha@psu.edu (Sinjoy Saha)</author>
-      <guid>http://localhost:1313/paperstack/lightgaussian/</guid>
-      <description>&lt;p&gt;Zhiwen Fan, Kevin Wang, Kairun Wen, Zehao Zhu, Dejia Xu, Zhangyang Wang, &amp;ldquo;LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS&amp;rdquo;, NeurIPS, 2024.&lt;/p&gt;&#xA;&lt;h2 id=&#34;quick-summary&#34;&gt;Quick Summary&lt;/h2&gt;&#xA;&lt;p&gt;Point-based 3D-Gaussian Splatting (3D-GS) &lt;a href=&#34;#references&#34;&gt;[1]&lt;/a&gt; improved the performance of novel view synthesis and enabled real-time rendering which Neural Radiance Fields (NeRF) could not achieve. However, it comes with very high storage costs and slower rendering speeds due to over-parameterization from dense Gaussians. This paper addressed the speed and storage issues of 3D-GS by implementing compact and less redundant representations. The authors achieve 15\(\times\) reduction in storage on average while maintaining visual fidelity and increased FPS of 237.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</title>
-      <link>http://localhost:1313/paperstack/nerf/</link>
-      <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate><author>sinjoy.saha@psu.edu (Sinjoy Saha)</author>
-      <guid>http://localhost:1313/paperstack/nerf/</guid>
-      <description>&lt;p&gt;Ben Mildenhall, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, Ren Ng, &amp;ldquo;NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis&amp;rdquo;, ECCV, 2020.&lt;/p&gt;&#xA;&lt;h2 id=&#34;quick-summary&#34;&gt;Quick Summary&lt;/h2&gt;&#xA;&lt;p&gt;The paper introduces a new method for novel view synthesis. The authors show that a fully connected (non-convolutional) neural network can “learn” the representation of a complex scene. The inputs to the network are 5D coordinates that define the spatial position (x, y, z) and viewing direction (\(\theta\), \(\phi\)) and the output is the color (view-dependent radiance (r, g, b)) and volume density (\(\sigma\)). Essentially, for a scene, a set of known camera poses are given as input to the network, and the network is trained to &amp;ldquo;memorize&amp;rdquo; the scene fully (over-fitted) - which means that the network contains a latent scene description embedded in its parameters. Thus, if it is queried with a new camera pose (5D position and view angle), it outputs the emitted radiance (color) and volume density (similar to opacity) for the novel view. The authors then use classic volume rendering to project the output into a 2D image.&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/active-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Active Preference Learning for Large Language Models</title>
       <link>http://localhost:1313/paperstack/apl-llm/</link>

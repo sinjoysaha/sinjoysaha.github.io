@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><title>Categories • Sinjoy Saha</title>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><title>Active Preference Learning for Large Language Models • Sinjoy Saha</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -97,61 +97,106 @@
 </header>
 
 
+
 <div class="w-full">
+
   <a class="inline-flex items-center gap-x-1 rounded-lg bg-primary-foreground border border-border px-2 py-1 text-sm transition-all hover:bg-input"
-    href="/"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+    href="/paperstack"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
       <path fill="currentColor" d="m6.921 12.5l5.792 5.792L12 19l-7-7l7-7l.713.708L6.921 11.5H19v1z"></path>
     </svg>
     <p class="p-astro"> Back</p>
   </a>
-  <h1 class="mb-6 mt-5 text-2xl font-bold">Categories</h1>
   
-  <div class="grid gap-y-16 sm:grid-cols-[3fr_1fr] sm:gap-x-8">
-    <section aria-label="Blog posts list">
-      <ul style="list-style: none; padding: 0;">
-        
-      </ul>
-    </section>
-    <aside>
-      <h2 class="mb-4 flex items-center text-lg font-semibold"> <svg aria-hidden="true" class="h-6 w-6" fill="none"
-          stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0h24v24H0z" fill="none" stroke="none"></path>
-          <path
-            d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z">
-          </path>
-          <path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path>
-          <path d="M6 9h-.01"></path>
-        </svg>
-        Tags
-      </h2>
-      <ul class="ul-astro text-bgColor flex flex-wrap gap-2">
-         
-        <li> <a
-            class="inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm transition-all hover:bg-input rounded-xl"
-            href="/tags/active-learning/" datinherit-prefetch="">
-            <p class="p-astro"> active learning <sup>3</sup></p>
-          </a> </li>
-           
-        <li> <a
-            class="inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm transition-all hover:bg-input rounded-xl"
-            href="/tags/computer-vision/" datinherit-prefetch="">
-            <p class="p-astro"> computer vision <sup>2</sup></p>
-          </a> </li>
-           
-        <li> <a
-            class="inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm transition-all hover:bg-input rounded-xl"
-            href="/tags/view-synthesis/" datinherit-prefetch="">
-            <p class="p-astro"> view synthesis <sup>2</sup></p>
-          </a> </li>
-          
-      </ul>
-      <span class="mt-4 block sm:text-end"> <a aria-label="View all blog categories" class="" href="/tags/"
-          datinherit-prefetch="">
-          View all →
-        </a> </span>
+
+  <div class="mt-8 gap-x-10 lg:flex lg:items-start">
+    <aside class="sticky top-20 order-2 -me-28 hidden basis-60 lg:flex lg:flex-col">
+      <h2 class="font-semibold ms-2">TABLE OF CONTENTS</h2>
+      <div class="prose-base prose-toc text-foreground/75">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-problem-does-this-paper-try-to-solve-ie-its-motivation">What problem does this paper try to solve, i.e., its motivation</a></li>
+    <li><a href="#how-does-it-solve-the-problem">How does it solve the problem?</a></li>
+    <li><a href="#a-list-of-novelties--contributions">A list of novelties / contributions</a></li>
+    <li><a href="#what-do-you-think-are-the-downsides-of-the-work">What do you think are the downsides of the work?</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+      </div>
     </aside>
+    <article class="flex-grow break-words" data-pagefind-body="">
+      <div id="blog-hero">
+        <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
+          <p class="text-xs"> <time datetime="2024-09-15 00:00:00 &#43;0000 UTC"> 
+              Sep 15, 2024  </time> / 5 min read </p>
+        </div>
+        <h1 class="mt-2 text-3xl font-medium sm:mb-1">Active Preference Learning for Large Language Models</h1>
+        <div class="mt-3 flex flex-row items-center gap-x-2"> <svg aria-hidden="true" class="me-1 inline-block h-6 w-6"
+            fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none" stroke="none"></path>
+            <path
+              d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z">
+            </path>
+            <path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path>
+            <path d="M6 9h-.01"></path>
+          </svg>
+          <div class="inline-flex"> <a aria-label="View more blogs with the tag learning"
+              class="inline-block before:content-['#'] hover:underline hover:underline-offset-4"
+              data-pagefind-filter="tag" href="/tags/active-learning/">active learning</a></div>
+        </div>
+      </div>
+      <div
+        class="prose prose-base prose-zinc mt-12 text-muted-foreground dark:prose-invert prose-headings:font-medium prose-headings:text-foreground prose-headings:before:absolute prose-headings:before:-ms-4 prose-th:before:content-none">
+        <p>William Muldrew, Peter Hayes, Mingtian Zhang, David Barber, &ldquo;Active preference learning for large language models&rdquo;, ICML, 2024. <a href="#references">[1]</a></p>
+<h2 id="what-problem-does-this-paper-try-to-solve-ie-its-motivation">What problem does this paper try to solve, i.e., its motivation</h2>
+<p>The fine-tuning techniques for aligning large language models (LLMs) require careful consideration and effective use of human resources where reinforcement learning is used (RLHF). Prior works have also used feedback from AI models (RLAIF) to align smaller language models. However, these methods are quite complex and unstable. Direct Preference Optimization (DPO) is a much simpler and more stable technique for aligning LLMs. Methods have also been developed using active learning to improve fine-tuning LLMs. The main problems with these previous methods of fine-tuning and aligning LLMs using active learning are as follows:</p>
+<ul>
+<li>Relying only on human feedback becomes increasingly unviable in today&rsquo;s era where language models have become extremely large and fine-tuning requires a lot of data.</li>
+<li>Methods relying on an AI model as an oracle for generating responses tend to consult it for every data point which becomes computationally inefficient. <a href="#references">[2]</a></li>
+<li>Prior methods have explored RLHF/RLAIF for active learning which are complex and unstable.</li>
+<li>Many AL sampling criteria are not straight-forward and might require modifications to the model architecture and fine-tuning process itself.</li>
+</ul>
+<h2 id="how-does-it-solve-the-problem">How does it solve the problem?</h2>
+<p>This paper aims to solve the above problems in the following manner:</p>
+<ul>
+<li>The paper leverages the DPO technique within the active learning process to make the fine-tuning process much simpler and more stable. The need for a separate reward model and multi-stage process to adapt to the autoregressive LLM is eliminated in DPO.</li>
+<li>The authors propose a few different acquisition functions. First, predictive entropy (PE) is a widely used measure of uncertainty in LLMs and it has previously been shown to be well calibrated for LLMs. Second, the preference model certainty under the Bradley-Terry model captures the oracle&rsquo;s preferences better than PE. The proposed function is maximised when the difference between the implicit rewards for the two generations is large and vice versa. Lastly, these two approaches are complementary and can be combined into a hybrid approach. The authors propose selecting a relatively large batch of prompts ranked by entropy. Then, only the top subset is used for generating prompt/completion pairs. Finally, the pairs are scored and ranked according to preference certainty. This filtering step minimizes the number of oracle consultations required for generation.</li>
+<li>The paper shows that GPT-4 is much more self-consistent than GPT-3.5 and thus selects GPT-4 as the oracle despite the high cost and latency.</li>
+<li>The main LLMs fine-tuned using active learning are GPT-2 and Pythia (GPT-3-like) models. The pre-trained versions of these models were obtained from Hugging Face.</li>
+<li>In the fine-tuning step, the authors use a straight-forward implementation of re-initialization, uniform sampling from the set of all previously sampled data and fine-tuning to convergence. The authors show that the proposed acquisition functions perform much better than the baseline of random sampling.</li>
+<li>The analysis of the histogram of the results shows that there is a much better differentiation for preference certainty and hybrid approach with the random sampling baseline.</li>
+</ul>
+<h2 id="a-list-of-novelties--contributions">A list of novelties / contributions</h2>
+<p>The main contributions of the paper are as follows:</p>
+<ul>
+<li>The paper introduces the combination of the DPO technique and active learning to simplify and stabilize the complex and data-hungry steps of fine-tuning of autoregressive LLMs. This eliminates the need for a separate reward model as in the case of RLHF/RLAIF base techniques.</li>
+<li>The authors propose a hybrid acquisition function combining predictive entropy and preference certainty. The filtering step using entropy reduces the number of requests to the oracle and the preference certainty captures the oracle preference much better.</li>
+</ul>
+<h2 id="what-do-you-think-are-the-downsides-of-the-work">What do you think are the downsides of the work?</h2>
+<p>Although the paper highlights the pressing challenge of fine-tuning LLMs with less data and proposes an AL method leveraging DPO to tackle this challenge, there are a few drawbacks of the proposed method as follows.</p>
+<ul>
+<li>Dataset - The paper only focuses on text generation tasks on generic text datasets. The first dataset is a text completion task for movie reviews and the second is a summarization of Reddit posts. Further analysis is required to show that the method works for domain-specific datasets and tasks.</li>
+<li>Model - The paper only runs experiments on GPT-2 and Pythia (GPT-3-like) models. These are mainly decoder-based models. For the sake of completeness, it would be interesting to experiment with encoder-decoder models too.</li>
+<li>Closed model as oracle - Since the paper mainly uses GPT-4 as the oracle for generating answers, the effects of the oracle cannot be studied very well. Also, closed models come at a much higher cost which might be economical for running multiple iterations of active learning. Also, the paper compares the choice of oracle by measuring the average self-consistency of only GPT-3.5 and GPT-4. However, a comparison including open models would have been better.</li>
+<li>Prompts - The authors only provide two prompts for the two datasets and thus the effect of prompt engineering is not well-studied.</li>
+<li>Comparative Analysis - The paper mainly compares the proposed acquisition functions predictive entropy, preference certainty and hybrid (PE + PC) with the baseline of random sampling. No comparison with other widely used sampling strategies is shown. The paper points out that the Reward rAnked Fine-Tuning (RaFT) \cite{dong2023raft} technique consults the oracle on every data point before filtering. However, no comparative study has been done with previous AL methods for fine-tuning LLMs.</li>
+</ul>
+<p>Despite some drawbacks, the paper proposes a novel method of leveraging Direct-Preference Optimization (DPO) for active learning of the fine-tuning of LLMs.</p>
+<h2 id="references">References</h2>
+<p>[1] William Muldrew, Peter Hayes, Mingtian Zhang, and David Barber. Active preference learning for large language models. In Forty-first International Conference on Machine Learning, 2024.</p>
+<p>[2] Hanze Dong, Wei Xiong, Deepanshu Goyal, Yihan Zhang, Winnie Chow, Rui Pan, Shizhe Diao, Jipeng Zhang, Kashun Shum, and Tong Zhang. Raft: Reward ranked finetuning for generative foundation model alignment. arXiv preprint arXiv:2304.06767, 2023.</p>
+
+
+      </div>
+    </article>
   </div>
+  <button aria-label="Back to Top"
+    class="z-90 fixed bottom-8 end-4 flex h-8 w-8 translate-y-28 items-center justify-center rounded-full border-2 border-transparent bg-primary-foreground text-3xl opacity-0 transition-all duration-300 hover:border-border/75 data-[show=true]:translate-y-0 data-[show=true]:opacity-100 sm:end-8 sm:h-12 sm:w-12"
+    data-show="true" id="to-top-btn"><svg aria-hidden="true" class="h-4 w-4" fill="none" focusable="false"
+      stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4.5 15.75l7.5-7.5 7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg> </button>
+
 </div><footer class="mx-auto mt-24 w-full">
 
     <div class="border-t border-border pt-5">

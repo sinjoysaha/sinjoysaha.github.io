@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sinjoy Saha</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Sinjoy Saha</description>
+    <title>Paperstacks on Sinjoy Saha</title>
+    <link>http://localhost:1313/paperstack/</link>
+    <description>Recent content in Paperstacks on Sinjoy Saha</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>sinjoy.saha@psu.edu (Sinjoy Saha)</managingEditor>
     <webMaster>sinjoy.saha@psu.edu (Sinjoy Saha)</webMaster>
     <lastBuildDate>Thu, 27 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/paperstack/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200&#43; FPS</title>
       <link>http://localhost:1313/paperstack/lightgaussian/</link>

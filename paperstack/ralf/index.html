@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><title>RALF: A Reinforced Active Learning Formulation for Object Class Recognition • Sinjoy Saha</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="map[avatar:profilePic.jpg bio:MS CSE @ Penn State catchphrase:Building ideas into reality! contact:map[list:[map[class:email icon:fas fa-envelope title:Email url:mailto:sinjoy.saha@psu.edu]]] details:map[list:[map[class:location icon:fa-map-marker title:State College, PA, USA]]] email:sinjoy.saha@psu.edu featureurl:https://linkedin.com/in/sinjoysaha name:Sinjoy Saha resumelink:https://drive.google.com/file/d/1NC7lXQ5rxlFgp1Jw5nFp_veAGZIAcJWa/view social:map[list:[map[class:linkedin icon:fab fa-linkedin title:LinkedIn url:https://linkedin.com/in/sinjoysaha] map[class:twitter icon:fab fa-twitter-square title:Twitter url:https://twitter.com/sinjoysaha] map[class:github icon:fab fa-github title:GitHub url:https://github.com/sinjoysaha] map[class:googelscholar icon:fas fa-graduation-cap title:Scholar url:https://scholar.google.com/citations?user=xNXqCc0AAAAJ&amp;hl=en]]]]">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+                
+
+
+
+
+
+
+
+
+
+
+
+ 
+<link rel="stylesheet" href="/assets/css/style.min.3f9ad2a6f9523ce512defd37951a654f2f2486f7670ee88309384491213487c0.css" integrity="" crossorigin="anonymous">
+
+
+ 
+<link rel="stylesheet" href="/css/astro.10dcc8cde77abf0f1ea6b7195ded24eb1397a5b38c6c1449d73fadac1b5c2a59.css" integrity="" crossorigin="anonymous">
+
+
+
+ 
+<link rel="stylesheet" href="/css/additional.5811f6e6edb23ae581b3831dc18b7ef1a5af55290fb2f576727b0adbf1a89204.css" integrity="" crossorigin="anonymous">
+
+
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+    
+    <body class='flex justify-center bg-background'>
+        <main class='flex min-h-screen w-screen max-w-[60rem] flex-col items-center px-6 pb-10 pt-7 font-satoshi text-[0.92rem] leading-relaxed sm:px-10 lg:px-10'><header class="mb-12 flex w-full flex-wrap pb-3 text-sm sm:flex-nowrap sm:justify-start">
+    <nav class="relative mx-auto flex w-full items-center justify-between sm:flex sm:items-center" aria-label="global">
+        <a class="inherit flex-none text-xl font-semibold" href="https://drive.google.com/file/d/1NC7lXQ5rxlFgp1Jw5nFp_veAGZIAcJWa/view" target="_blank" aria-label="Brand">resume</a>
+
+        <div class="flex flex-row items-center justify-center gap-x-5 sm:gap-x-7">
+            <a href="/" class="flex-none text-[1.05rem] font-medium hover:text-foreground/75" aria-label="Nav Menu Item">home</a>
+            <a href="/projects" class="flex-none text-[1.05rem] font-medium hover:text-foreground/75" aria-label="Nav Menu Item">projects</a>
+            <a href="/paperstack" class="flex-none text-[1.05rem] font-medium hover:text-foreground/75" aria-label="Nav Menu Item">paperstack</a>
+            
+            
+
+            <button
+                id="toggleDarkMode"
+                class="relative rounded-md border border-border p-1.5 transition-all hover:bg-border"
+            >
+                <span class="sr-only">Dark Theme</span>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:hidden dark:-rotate-90 dark:scale-0"
+                >
+                    <path
+                        fill="currentColor"
+                        d="M12 15q1.25 0 2.125-.875T15 12q0-1.25-.875-2.125T12 9q-1.25 0-2.125.875T9 12q0 1.25.875 2.125T12 15m0 1q-1.671 0-2.836-1.164T8 12q0-1.671 1.164-2.836T12 8q1.671 0 2.836 1.164T16 12q0 1.671-1.164 2.836T12 16m-7-3.5H1.5v-1H5zm17.5 0H19v-1h3.5zM11.5 5V1.5h1V5zm0 17.5V19h1v3.5zM6.746 7.404l-2.16-2.098l.695-.744l2.111 2.134zM18.72 19.438l-2.117-2.14l.652-.702l2.16 2.098zM16.596 6.746l2.098-2.16l.744.695l-2.134 2.111zM4.562 18.72l2.14-2.117l.663.652l-2.078 2.179zM12 12"
+                    ></path>
+                </svg>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    class="hidden h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:block dark:rotate-0 dark:scale-100"
+                >
+                    <path
+                        fill="currentColor"
+                        d="M12.058 20q-3.334 0-5.667-2.333Q4.058 15.333 4.058 12q0-3.038 1.98-5.27Q8.02 4.5 10.942 4.097q.081 0 .159.006t.153.017q-.506.706-.801 1.57q-.295.865-.295 1.811q0 2.667 1.866 4.533q1.867 1.867 4.534 1.867q.952 0 1.813-.295q.862-.295 1.548-.801q.012.075.018.153q.005.078.005.158q-.384 2.923-2.615 4.904T12.057 20"
+                    ></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+</header>
+
+
+
+<div class="w-full">
+
+  <a class="inline-flex items-center gap-x-1 rounded-lg bg-primary-foreground border border-border px-2 py-1 text-sm transition-all hover:bg-input"
+    href="/paperstack"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+      <path fill="currentColor" d="m6.921 12.5l5.792 5.792L12 19l-7-7l7-7l.713.708L6.921 11.5H19v1z"></path>
+    </svg>
+    <p class="p-astro"> Back</p>
+  </a>
+  
+
+  <div class="mt-8 gap-x-10 lg:flex lg:items-start">
+    <aside class="sticky top-20 order-2 -me-28 hidden basis-60 lg:flex lg:flex-col">
+      <h2 class="font-semibold ms-2">TABLE OF CONTENTS</h2>
+      <div class="prose-base prose-toc text-foreground/75">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-problem-does-this-paper-try-to-solve-ie-its-motivation">What problem does this paper try to solve, i.e., its motivation</a></li>
+    <li><a href="#how-does-it-solve-the-problems">How does it solve the problems?</a></li>
+    <li><a href="#a-list-of-novelties--contributions">A list of novelties / contributions</a></li>
+    <li><a href="#what-do-you-think-are-the-downsides-of-the-work">What do you think are the downsides of the work?</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+      </div>
+    </aside>
+    <article class="flex-grow break-words" data-pagefind-body="">
+      <div id="blog-hero">
+        <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
+          <p class="text-xs"> <time datetime="2024-09-15 00:00:00 &#43;0000 UTC"> 
+              Sep 15, 2024  </time> / 8 min read </p>
+        </div>
+        <h1 class="mt-2 text-3xl font-medium sm:mb-1">RALF: A Reinforced Active Learning Formulation for Object Class Recognition</h1>
+        <div class="mt-3 flex flex-row items-center gap-x-2"> <svg aria-hidden="true" class="me-1 inline-block h-6 w-6"
+            fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none" stroke="none"></path>
+            <path
+              d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z">
+            </path>
+            <path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path>
+            <path d="M6 9h-.01"></path>
+          </svg>
+          <div class="inline-flex"> <a aria-label="View more blogs with the tag learning"
+              class="inline-block before:content-['#'] hover:underline hover:underline-offset-4"
+              data-pagefind-filter="tag" href="/tags/active-learning/">active learning</a></div>
+        </div>
+      </div>
+      <div
+        class="prose prose-base prose-zinc mt-12 text-muted-foreground dark:prose-invert prose-headings:font-medium prose-headings:text-foreground prose-headings:before:absolute prose-headings:before:-ms-4 prose-th:before:content-none">
+        <p>Sandra Ebert, Mario Fritz, Bernt Schiele, &ldquo;RALF: A Reinforced Active Learning Formulation for Object Class Recognition&rdquo;, CVPR, 2012. <a href="#references">[1]</a></p>
+<h2 id="what-problem-does-this-paper-try-to-solve-ie-its-motivation">What problem does this paper try to solve, i.e., its motivation</h2>
+<p>This paper addressed the challenge of balancing the selection of informative samples in pool-based active learning, where the entire dataset is treated as a pool, and samples are selected based on given criteria, for labeling by an oracle. The paper highlights the &ldquo;exploitation-exploration dilemma&rdquo; which often arises when only a single criterion is used for selecting examples from the data pool. The main issues with using either pure exploitative or pure explorative criteria can be summarized as follows:</p>
+<ul>
+<li>
+<p><strong>Pure exploitative criteria</strong> - These are often implemented using <strong>uncertainty-based metrics</strong>. These metrics tend to prioritize examples that the model is uncertain of i.e. those that are difficult to learn are ranked much higher. Thus, a pure exploitative strategy often leads to <strong>sampling bias</strong> and does not provide enough coverage of the entire data space since the model only focuses on outliers. This becomes more pronounced in multi-class scenarios where the dataset can be imbalanced and some classes are requested more while other classes are ignored. This problem also becomes prominent on more challenging datasets when examples in the same class are spatially separated into dense regions in the latent space.</p>
+</li>
+<li>
+<p><strong>Pure explorative criteria</strong> - These are often implemented using <strong>density-based metrics</strong> leveraging the underlying unlabeled data distribution, using clustering or linear reconstructions, to find the most representative samples. This approach, although samples from the entire data space, ignores feedback during the labeling process, and thus needs many iterations i.e. too many labeling requests before a good decision boundary is found.
+Prior methods have attempted to solve this problem by combining different criteria. The main problems with these approaches pointed out by the authors are as follows:</p>
+<ul>
+<li>These typically combine only two criteria and are difficult to balance effectively in practice.</li>
+<li>The combination of these criteria is usually fixed, instead of time-varying. Thus, they lack the flexibility to adapt to time-varying trade-offs.</li>
+<li>These methods do not generalize well to multi-class scenarios.</li>
+<li>Prior methods mostly overlook the incorporation of feedback from the classifier to learn from previous AL rounds to improve subsequent sample selections and label requests.</li>
+<li>They are limited in flexibility in accommodating more criteria and thus, the range of possible strategies that can be achieved.</li>
+<li>Many of these methods face computational challenges.</li>
+<li>The authors show that no single, pre-determined scheme works well across all datasets with different properties.</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-does-it-solve-the-problems">How does it solve the problems?</h2>
+<p>The paper addresses the issues listed above by proposing a reinforced active learning formulation (RALF) that considers the entire active learning as a meta-learning process that is optimized by learning a strategy from feedback &ldquo;on the fly&rdquo;.
+In the first part, the authors motivate the problem by discussing two exploitation criteria, namely <strong>Entropy</strong> and <strong>Margin</strong>, and three exploration criteria, namely <strong>Node potential</strong>, <strong>Kernel farthest first</strong> and <strong>Graph density</strong>. Graph density is introduced by the authors as a novel sampling criterion that uses a \(k\) -nearest neighbour graph to identify highly connected nodes. This is further discussed in the next section <a href="#a-list-of-noveltiescontributions">[A list of novelties / contributions]</a>.</p>
+<p>Next, the paper describes the datasets and the classifiers used in the experiments. According to the increasing number of object classes, the datasets used are ETH-80 (ETH) with 8 classes, Cropped PASCAL (C-PASCAL) with 20 classes and Caltech 101 with 102 classes. The paper uses two classifiers, one semi-supervised and the other supervised, namely <strong>Label Propagation (LP)</strong> with \(k\) graph and <strong>Support Vector Machine (SVM)</strong> with RBF kernel.</p>
+<p>Multiple experiments are performed to analyze each single criterion and classifier pair, with random sampling from uniform distribution as the baseline. The paper also highlights that some datasets might need more exploration at the beginning and more exploitation at the end and vice versa, while others might need a constant trade-off. Thus, numerous experiments are also performed to analyze the fixed and time-varying combinations of exploration and exploitation criteria, with Eq. 10 in the paper being the AL framework. Essentially, different \(\beta(t)\) such as \(0.5, 0, 1, log(t), t,\) etc. denote fixed, pure exploration, pure exploitation, and time-varying strategies respectively. These experiments lead to the following major observations:</p>
+<ul>
+<li>LP is always better than SVM, so subsequent experiments are done only on LP.</li>
+<li>Exploitation criteria work better than exploration criteria due to local feedback after each iteration.</li>
+<li>The novel criteria, Graph density, works best for all datasets in combination with Entropy or Margin criteria.</li>
+<li>No single, pre-determined scheme, whether single criteria or time-varying combinations, works well across all datasets with different properties.
+Finally, motivated by these experimental results, the paper aims at modeling the progress of the learnt classifier and uses it to control trade-offs between criteria. This is the main difference from earlier works which overlooked the feedback from the classifier. It formulates the active learning process as a feedback-driven <strong>Markov decision process</strong> (MDP) which uses <strong>Q-learning</strong> to learn a transition table where the states are the different combinations of two criteria with \(n\) actions representing \(n\) fixed trade-offs. The authors claim it is still time-varying since it can switch between different actions. The authors have chosen Q-learning since it is model-free and computationally fast. The initialization problem, where the method starts with an empty \(Q\) table, is solved using a guided initialization phase which uses a prediction probability-weighted entropy aggregated over each label \(j\) for each sample \(x_i\). This is used to select the next action.</li>
+</ul>
+<h2 id="a-list-of-novelties--contributions">A list of novelties / contributions</h2>
+<p>The following are the main contributions of the paper:</p>
+<ul>
+<li>The paper proposes a novel exploration-based sampling criteria called <strong>Graph density</strong> leveraging a \(k\) graph with Manhattan distance (and \(k = 10\) ) which is weighted with a Gaussian kernel and normalized by number of edges, and used to rank the data points corresponding to the representatives. The main intuition is that each class representative is highly embedded in the graph and, thus is well-connected having many edges. The normalization and weight reduction of direct neighbors avoid over-sampling dense regions or outliers. It is more robust than the Node potential criteria due the underlying \(k\) graph structure.</li>
+<li>The paper empirically shows that no single criterion works best across all datasets.</li>
+<li>The paper integrates the probability of switching between exploration and exploitation into the already parameterized time-varying AL framework so that there is always a mix of two criteria.</li>
+<li>Since previous reward rescaling functions do not generalize well to new datasets, the paper proposes a new rescaling function to map all previously observed rewards in the interval \([-1, 1]\).</li>
+<li>The authors also propose a new reward function using the difference in the overall entropies between the two time steps. This is closer to the learning progress of the classifier instead of just a change in the prediction.</li>
+<li>The main AL process is formulated as a Markov decision process which is learnt using the Q-learning method. This is a model-free and computationally efficient RL algorithm. There are only two parameters for Q-learning and no dataset-specific tuning is needed.</li>
+<li>To tackle the challenge of initialization with empty Q table and to avoid the computationally method of visiting each state-action-pair, the authors propose a guided initialization phase.</li>
+</ul>
+<h2 id="what-do-you-think-are-the-downsides-of-the-work">What do you think are the downsides of the work?</h2>
+<p>The authors run several experiments to show that their novel sampling criterion works best compared to other explorative criteria and that time-varying strategies are better than fixed ones. Their proposed MDP-based method, RALF, outperforms the compared methods and works well in the multi-class scenario for three different datasets. However, there are a few downsides to this work.</p>
+<ul>
+<li>
+<p>Kernel and classifier - The authors choose a \(k\) -NN-based label propagation (LP) and RBF-based SVM classifier and show that LP consistently does better than SVM and all subsequent experiments are thus done only on LP. It is not clear from the experiments if the choice of kernel affects the classification performance and the AL process. An additional RBF-based LP could have been included to solve this ambiguity. Also, the results of subsequent experiments might differ with a different classifier.</p>
+</li>
+<li>
+<p>Task and dataset - The authors choose three different multi-class datasets with varying difficulty. However, all experiments show the out-performance of the method only on a single task of multi-class object classification. It is not obvious if the proposed method would generalize to other tasks and domains, either in computer vision, NLP or time series data.</p>
+</li>
+<li>
+<p>Limited sampling criteria - The parameterization of the AL framework to balance between explorative and exploitative sampling limits the strategies to only a mixture of two criteria, one from each category.</p>
+</li>
+<li>
+<p>Fixed trade-offs - The authors also use \(n\) fixed trade-offs in \([0, 1]\) and argue that it is still time-varying since it can switch between different actions. However, the range of possible time-varying strategies still becomes limited.</p>
+</li>
+<li>
+<p>RL algorithm - The authors choose Q-Learning for learning the strategies. As the authors point out, Q-learning is computationally efficient only when the number of states and actions are kept small to speed up initialization, thus defeating the flexibility with a much lesser range of strategies.</p>
+</li>
+</ul>
+<p><strong>Minor point</strong> - \(U\) is overloaded, i.e. in Sec. 3.1, \(U\) denotes the set of all unlabeled examples and in Sec. 6, \(U\) denotes the set of all uncertainty-based criteria.</p>
+<h2 id="references">References</h2>
+<p>[1] Sandra Ebert, Mario Fritz, and Bernt Schiele. Ralf: A reinforced active learning formulation for object class recognition. In 2012 IEEE Conference on Computer Vision and  Pattern Recognition, pages 3626–3633. IEEE, 2012.</p>
+
+
+      </div>
+    </article>
+  </div>
+  <button aria-label="Back to Top"
+    class="z-90 fixed bottom-8 end-4 flex h-8 w-8 translate-y-28 items-center justify-center rounded-full border-2 border-transparent bg-primary-foreground text-3xl opacity-0 transition-all duration-300 hover:border-border/75 data-[show=true]:translate-y-0 data-[show=true]:opacity-100 sm:end-8 sm:h-12 sm:w-12"
+    data-show="true" id="to-top-btn"><svg aria-hidden="true" class="h-4 w-4" fill="none" focusable="false"
+      stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4.5 15.75l7.5-7.5 7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg> </button>
+
+</div><footer class="mx-auto mt-24 w-full">
+
+    <div class="border-t border-border pt-5">
+        <div
+            class="flex flex-col items-center gap-y-3 sm:flex sm:flex-row sm:items-center sm:justify-between sm:gap-y-0">
+            <div class="flex gap-x-4 text-sm text-muted-foreground">
+                <p>© 2025. Built using <a href="https://gohugo.io/" class="underline">Hugo</a>. Inspired from
+                    <a href="https://github.com/srleom/astro-theme-resume" class="underline">astro-theme-resume</a>.
+                </p>
+            </div>
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-x-4"> <a
+                        class="inline-block text-muted-foreground transition-all hover:text-muted-foreground/75"
+                        href="mailto:sinjoy.saha@psu.edu"> <svg xmlns="http://www.w3.org/2000/svg"
+                            width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
+                        </svg> </a>
+                    <a class="inline-block text-muted-foreground transition-all hover:text-muted-foreground/75"
+                        href="https://drive.google.com/file/d/1NC7lXQ5rxlFgp1Jw5nFp_veAGZIAcJWa/view" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6z"></path>
+                            <path d="M14 3v5h5M16 13H8M16 17H8M10 9H8"></path>
+                        </svg> </a>
+                    <a class="inline-block text-muted-foreground transition-all hover:text-muted-foreground/75"
+                        href="https://linkedin.com/in/sinjoysaha"> <svg class="h-4 w-4 flex-shrink-0"
+                            xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                            <path fill="currentColor"
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248c-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586c.173-.431.568-.878 1.232-.878c.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252c-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z">
+                            </path>
+                        </svg> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer></main><script src="/assets/js/main.min.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TDS38QPM4D"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-TDS38QPM4D');
+</script>
+
+
+<script>
+    function getCurrentTheme() {
+        return localStorage.getItem("theme");
+    }
+    const toggleDarkModeButton = document.getElementById("toggleDarkMode");
+
+    toggleDarkModeButton?.addEventListener("click", () => {
+        const toggleDarkModeEvent = new CustomEvent("theme-change", {
+            detail: { theme: getCurrentTheme() === "light" ? "dark" : "light" },
+        });
+        document.dispatchEvent(toggleDarkModeEvent);
+    });
+</script>
+
+<script>
+    const e = document.getElementById("to-top-btn")
+        , n = document.getElementById("blog-hero");
+    function c(t) {
+        t.forEach(o => {
+            e.dataset.show = (!o.isIntersecting).toString()
+        }
+        )
+    }
+    e.addEventListener("click", () => {
+        document.documentElement.scrollTo({
+            behavior: "smooth",
+            top: 0
+        })
+    }
+    );
+    const r = new IntersectionObserver(c);
+    r.observe(n);
+
+</script>
+
+<script is:inline>
+    const lightModePref = window.matchMedia('(prefers-color-scheme: light)')
+
+    
+    function getUserPref() {
+        const storedTheme = localStorage.getItem('theme') ?? undefined
+        return storedTheme || (lightModePref.matches ? 'light' : 'dark')
+    }
+
+    function setTheme(newTheme) {
+        if (newTheme !== 'light' && newTheme !== 'dark') {
+            return console.log(`Invalid theme value '${newTheme}' received. Expected 'light' or 'dark'.`)
+        }
+
+        localStorage.setItem('theme', newTheme)
+
+        const root = document.documentElement
+
+        
+        if (newTheme === 'dark' && root.classList.contains('dark')) {
+            return
+        } else if (newTheme === 'light' && !root.classList.contains('dark')) {
+            return
+        }
+
+        root.classList.toggle('dark')
+    }
+
+    
+    setTheme(getUserPref())
+
+    
+    document.addEventListener('astro:after-swap', () => setTheme(getUserPref()))
+
+    
+    document.addEventListener('theme-change', (e) => {
+        setTheme(e.detail.theme)
+    })
+
+    
+    lightModePref.addEventListener('change', (e) => setTheme(e.matches ? 'light' : 'dark'))
+</script></body>
+</html>

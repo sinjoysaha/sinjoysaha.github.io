@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><title>404 Page not found • Sinjoy Saha</title>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><title>LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200&#43; FPS • Sinjoy Saha</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -98,14 +98,96 @@
 
 
 
-<div id="main" role="main">
+<div class="w-full">
 
-  <div class='px-4 py-10 text-center sm:px-6 lg:px-8'>
-    <h1 class='block text-7xl font-bold sm:text-9xl'>404</h1>
-    <p class='mt-3 text-muted-foreground'>Oops, something went wrong.</p>
-    <p class=''>Sorry, we couldn't find your page.</p>
-    
-    </div>
+  <a class="inline-flex items-center gap-x-1 rounded-lg bg-primary-foreground border border-border px-2 py-1 text-sm transition-all hover:bg-input"
+    href="/paperstack"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+      <path fill="currentColor" d="m6.921 12.5l5.792 5.792L12 19l-7-7l7-7l.713.708L6.921 11.5H19v1z"></path>
+    </svg>
+    <p class="p-astro"> Back</p>
+  </a>
+  
+
+  <div class="mt-8 gap-x-10 lg:flex lg:items-start">
+    <aside class="sticky top-20 order-2 -me-28 hidden basis-60 lg:flex lg:flex-col">
+      <h2 class="font-semibold ms-2">TABLE OF CONTENTS</h2>
+      <div class="prose-base prose-toc text-foreground/75">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#quick-summary">Quick Summary</a></li>
+    <li><a href="#ideas-approach-and-results">Ideas, Approach and Results</a></li>
+    <li><a href="#comparison-strengths-and-weaknesses">Comparison, Strengths and Weaknesses</a></li>
+    <li><a href="#questionsissues">Questions/Issues</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+      </div>
+    </aside>
+    <article class="flex-grow break-words" data-pagefind-body="">
+      <div id="blog-hero">
+        <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
+          <p class="text-xs"> <time datetime="2025-03-27 00:00:00 &#43;0000 UTC"> 
+              Mar 27, 2025  </time> / 3 min read </p>
+        </div>
+        <h1 class="mt-2 text-3xl font-medium sm:mb-1">LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200&#43; FPS</h1>
+        <div class="mt-3 flex flex-row items-center gap-x-2"> <svg aria-hidden="true" class="me-1 inline-block h-6 w-6"
+            fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none" stroke="none"></path>
+            <path
+              d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z">
+            </path>
+            <path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path>
+            <path d="M6 9h-.01"></path>
+          </svg>
+          <div class="inline-flex"> <a aria-label="View more blogs with the tag learning"
+              class="inline-block before:content-['#'] hover:underline hover:underline-offset-4"
+              data-pagefind-filter="tag" href="/tags/view-synthesis/">view synthesis</a></div>
+          <div class="inline-flex"> <a aria-label="View more blogs with the tag learning"
+              class="inline-block before:content-['#'] hover:underline hover:underline-offset-4"
+              data-pagefind-filter="tag" href="/tags/computer-vision/">computer vision</a></div>
+        </div>
+      </div>
+      <div
+        class="prose prose-base prose-zinc mt-12 text-muted-foreground dark:prose-invert prose-headings:font-medium prose-headings:text-foreground prose-headings:before:absolute prose-headings:before:-ms-4 prose-th:before:content-none">
+        <p>Zhiwen Fan, Kevin Wang, Kairun Wen, Zehao Zhu, Dejia Xu, Zhangyang Wang, &ldquo;LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS&rdquo;, NeurIPS, 2024.</p>
+<h2 id="quick-summary">Quick Summary</h2>
+<p>Point-based 3D-Gaussian Splatting (3D-GS) <a href="#references">[1]</a> improved the performance of novel view synthesis and enabled real-time rendering which Neural Radiance Fields (NeRF) could not achieve. However, it comes with very high storage costs and slower rendering speeds due to over-parameterization from dense Gaussians. This paper addressed the speed and storage issues of 3D-GS by implementing compact and less redundant representations. The authors achieve 15\(\times\) reduction in storage on average while maintaining visual fidelity and increased FPS of 237.</p>
+<h2 id="ideas-approach-and-results">Ideas, Approach and Results</h2>
+<p>The main ideas of the paper are three fold:</p>
+<ul>
+<li>
+<p>Gaussian Pruning and Recovery - removes redundant Gaussians that have minimal impact on quality and a recovery step for smoothness, thus reducing storage while preserving visual quality. The authors note that <a href="#references">[1]</a> uses Gaussian Densification to increase the Gaussian count, thus increasing the coverage of small details of a scene and enhancing recontruction quality. However, this needs significantly more storage. The authors draw inspiration from neural network pruning. The naive approach of using criteria such as opacity to measure impact of Gaussians might reduce the essential scene details. So, the authors propose calculating global significance of gaussians based on how many times each gaussian is hit (in all training views) and aggregating other factors such as opacity contribution, volume and transmittance values. Volume factor is normalized by the 90% largest values and clipped between 0 and 1.</p>
+</li>
+<li>
+<p>Spherical Harmonic (SH) Distillation - reduces the complexity of the spherical harmonic coefficients while preserving essential lighting and appearance details improving compression efficiency. Here, the authors note that in <a href="#references">[1]</a> \(\sim\)80% of a Gaussian Splat representation is taken up by the Spherical Harmonics coefficients which is responsible for the &ldquo;shininess&rdquo; and specular reflections of the scene. The authors apply knowledge distillation technique to tackle this, where the teacher is the full-degree SHs and student is the lower-degree SHs and is trained using the mean-squared-L2 loss of pixels intensities between the two.</p>
+</li>
+<li>
+<p>Vector Quantization - The authors also use Vector Quantization to store the Gaussians at a lower bit-width, again boosting compression efficiency. However, even here they balance between compression and quality and use the precomputed significance scores from the previous step to apply quantization to the least significant Spherical Harmonics.</p>
+</li>
+</ul>
+<p>The paper shows similar PSNR and SSIM scores on Mip-NeRF and Tank and Temple datasets with significant reduction in storage and improvement in speed.</p>
+<h2 id="comparison-strengths-and-weaknesses">Comparison, Strengths and Weaknesses</h2>
+<p>The three main techniques used in the paper are pruning redundant Gaussians, distilling the SHs and quantization to achieve efficient compression while maintaining visual quality.</p>
+<p>The authors show that a naive criteria for gaussian pruning does not work well and thus, proposes the global significance calculation. However, calculation involves multiple factors and hyperparameters (like \(\beta\) and &ldquo;90%&rdquo; largest Gaussians) which might be difficult to tune for other scenes.</p>
+<p>The SH distillation step aims at reducing a storage by using a teacher-student model while preserving the harmonics responsible for &ldquo;shininess&rdquo; and reflections.</p>
+<p>The quantization step involves a K-means clustering step which again requires a hyperparameter K (number clusters or codes) to be tuned.</p>
+<h2 id="questionsissues">Questions/Issues</h2>
+<p>The paper achieves extremely good results on the datasets mentioned and outperforms <a href="#references">[1]</a> on storage significantly and thus FPS, which enables real-time novel view synthesis. However, I am curious to know if hyperparameter tuning is required for new scenes and how can we efficiently tune these hypperparameters mentioned above in a real-time basis. Also, the volume normalization parameter (90%) seemed arbitrary and I&rsquo;m curious if there exists any method to find that for new datasets.</p>
+<h2 id="references">References</h2>
+<p>[1] Bernhard Kerbl, Georgios Kopanas, Thomas Leimkühler, George Drettakis, &ldquo;3D Gaussian Splatting for Real-Time Radiance Field Rendering&rdquo;, ACM Transactions on Graphics, July 2023.</p>
+
+
+      </div>
+    </article>
+  </div>
+  <button aria-label="Back to Top"
+    class="z-90 fixed bottom-8 end-4 flex h-8 w-8 translate-y-28 items-center justify-center rounded-full border-2 border-transparent bg-primary-foreground text-3xl opacity-0 transition-all duration-300 hover:border-border/75 data-[show=true]:translate-y-0 data-[show=true]:opacity-100 sm:end-8 sm:h-12 sm:w-12"
+    data-show="true" id="to-top-btn"><svg aria-hidden="true" class="h-4 w-4" fill="none" focusable="false"
+      stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4.5 15.75l7.5-7.5 7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg> </button>
+
 </div><footer class="mx-auto mt-24 w-full">
 
     <div class="border-t border-border pt-5">

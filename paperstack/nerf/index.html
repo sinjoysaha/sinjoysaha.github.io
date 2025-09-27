@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><title>404 Page not found • Sinjoy Saha</title>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><title>NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis • Sinjoy Saha</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -98,14 +98,88 @@
 
 
 
-<div id="main" role="main">
+<div class="w-full">
 
-  <div class='px-4 py-10 text-center sm:px-6 lg:px-8'>
-    <h1 class='block text-7xl font-bold sm:text-9xl'>404</h1>
-    <p class='mt-3 text-muted-foreground'>Oops, something went wrong.</p>
-    <p class=''>Sorry, we couldn't find your page.</p>
-    
-    </div>
+  <a class="inline-flex items-center gap-x-1 rounded-lg bg-primary-foreground border border-border px-2 py-1 text-sm transition-all hover:bg-input"
+    href="/paperstack"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+      <path fill="currentColor" d="m6.921 12.5l5.792 5.792L12 19l-7-7l7-7l.713.708L6.921 11.5H19v1z"></path>
+    </svg>
+    <p class="p-astro"> Back</p>
+  </a>
+  
+
+  <div class="mt-8 gap-x-10 lg:flex lg:items-start">
+    <aside class="sticky top-20 order-2 -me-28 hidden basis-60 lg:flex lg:flex-col">
+      <h2 class="font-semibold ms-2">TABLE OF CONTENTS</h2>
+      <div class="prose-base prose-toc text-foreground/75">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#quick-summary">Quick Summary</a></li>
+    <li><a href="#ideas-approach-and-results">Ideas, Approach and Results</a></li>
+    <li><a href="#comparison-strengths-and-weaknesses">Comparison, Strengths and Weaknesses</a></li>
+    <li><a href="#questionsissues">Questions/Issues</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+      </div>
+    </aside>
+    <article class="flex-grow break-words" data-pagefind-body="">
+      <div id="blog-hero">
+        <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
+          <p class="text-xs"> <time datetime="2025-03-27 00:00:00 &#43;0000 UTC"> 
+              Mar 27, 2025  </time> / 5 min read </p>
+        </div>
+        <h1 class="mt-2 text-3xl font-medium sm:mb-1">NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</h1>
+        <div class="mt-3 flex flex-row items-center gap-x-2"> <svg aria-hidden="true" class="me-1 inline-block h-6 w-6"
+            fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none" stroke="none"></path>
+            <path
+              d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z">
+            </path>
+            <path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path>
+            <path d="M6 9h-.01"></path>
+          </svg>
+          <div class="inline-flex"> <a aria-label="View more blogs with the tag learning"
+              class="inline-block before:content-['#'] hover:underline hover:underline-offset-4"
+              data-pagefind-filter="tag" href="/tags/view-synthesis/">view synthesis</a></div>
+          <div class="inline-flex"> <a aria-label="View more blogs with the tag learning"
+              class="inline-block before:content-['#'] hover:underline hover:underline-offset-4"
+              data-pagefind-filter="tag" href="/tags/computer-vision/">computer vision</a></div>
+        </div>
+      </div>
+      <div
+        class="prose prose-base prose-zinc mt-12 text-muted-foreground dark:prose-invert prose-headings:font-medium prose-headings:text-foreground prose-headings:before:absolute prose-headings:before:-ms-4 prose-th:before:content-none">
+        <p>Ben Mildenhall, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, Ren Ng, &ldquo;NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis&rdquo;, ECCV, 2020.</p>
+<h2 id="quick-summary">Quick Summary</h2>
+<p>The paper introduces a new method for novel view synthesis. The authors show that a fully connected (non-convolutional) neural network can “learn” the representation of a complex scene. The inputs to the network are 5D coordinates that define the spatial position (x, y, z) and viewing direction (\(\theta\), \(\phi\)) and the output is the color (view-dependent radiance (r, g, b)) and volume density (\(\sigma\)). Essentially, for a scene, a set of known camera poses are given as input to the network, and the network is trained to &ldquo;memorize&rdquo; the scene fully (over-fitted) - which means that the network contains a latent scene description embedded in its parameters. Thus, if it is queried with a new camera pose (5D position and view angle), it outputs the emitted radiance (color) and volume density (similar to opacity) for the novel view. The authors then use classic volume rendering to project the output into a 2D image.</p>
+<h2 id="ideas-approach-and-results">Ideas, Approach and Results</h2>
+<p>The algorithm works similar to a classic ray tracer. A ray is marched from the known camera position and viewing direction towards the scene (which is assumed to enclosed inside a box) and points are evenly sampled along the ray. The MLP then outputs color and volume density for each point. The density value ranges from \(0\) to \(\infty\), from fully transparent to fully opaque. The output values from the MLP are then out-composited from the scene towards the camera. Thus, the final 2D image is rendered. It is used, along with the ground truth image (from the original camera), to calculate a squared-L2 loss which is naturally differentiable and the network can be trained.</p>
+<p>The 5D input is actually 3D location \(x\) (x, y, z) and a 2D viewing direction (\(\theta\), \(\phi\)) which in practice is a 3D Cartersian <strong>unit vector</strong>  \(d\). The MLP itself is 9 layers - the first 8 layers process \(x\) (uses ReLU and 256 channels) which outputs density \(\sigma\) and 256-dim feature vector, which concatenated with the view direction feeds into the last layer (128-dim) to produce the output colors. Concatenating the viewing direction allows the model to &ldquo;learn&rdquo; non-Lambertian effects - reflections at the same surface appear different from different viewing angles.</p>
+<p>The authors also introduce two optimizations which greatly improve the performance.</p>
+<p><strong>Hierarchical Volume Sampling</strong> - Instead of evenly sampling along the ray once, the authors use a two pass rendering where a coarse network first outputs and initial estimate of the volume densities of evenly sampled points. Then, the region around the volumetrically dense points are sampled again for finer estimate by another network. This allows for more efficient sample allocation for training the MLP and volumetric rendering.</p>
+<p><strong>Positional Encoding</strong> - The authors find that the naive implementation of directly feeding the 5D coordinates to the network has poor performance for high-frequency variation in color and geometry. Thus, they map the inputs to higher dimensional space using sinusoids - from \(\mathbb{R}\) to \(\mathbb{R}^{2L}\) - before passing them into the network. In a later paper, they go into why this is the case, draw tangents to NTK, and show that Random Fourier Features might be better than positional encodings <a href="#references">[1]</a>.</p>
+<p>The authors report significantly higher PSNR and SSIM than previous techniques such SRN, NV and LLFF on real and synthetic images. The supplementary materials and online videos show the differences in performances much clearer <a href="#references">[2]</a>.</p>
+<h2 id="comparison-strengths-and-weaknesses">Comparison, Strengths and Weaknesses</h2>
+<p>The paper shows that a neural network can be trained to &ldquo;memorize&rdquo; a scene and queried to synthesize novel views. The only inputs needed are the 5D coordidates of the camera pose and the ground truths. The authors also show that the concatenation of the viewing direction after a few layers also improves performance realistic non-Lambertian materials. The hierarchical volume sampling improves sample allocation which is significant for such data hungry networks. Lastly, the positional encoding of 5D coordinates in a higher dimensional space greatly improves performance on scenes with high-frequency variations in color and geometry.</p>
+<p>Inspite of the novel use of an MLP to learn and generate novel radiance fields, the method has some weakness. First, the time needed to train and over-fit the network is quite long and since each scene requires a new network to be trained, the method cannot be directly used for real-time view synthesis. Secondly, the need for sampling twice and training a coarse and a fine network also could be a bottleneck for practical real-time usage. However, the paper shows significant performance improvements over previous methods such as SRN (also a neural scene representation technique).</p>
+<h2 id="questionsissues">Questions/Issues</h2>
+<p>I am curious to know the theory behind using positional encodings - mapping the 5D coordinates to a higher dimensional just using sinusoidal harmonics - improves the performance to such an extent. Neural networks are known to be &ldquo;universal approximators&rdquo;, yet somehow they struggle to learn higher frequencies of color and geometry. Here, the authors use just 9 layers. Can the depth of the network be increased to mitigate this to some extent? Additionally, the authors use a basic MLP. Does other architectures like 1D-CNN (on the sinusoidal harmonics) provide any benefit?</p>
+<h2 id="references">References</h2>
+<p>[1] Matthew Tancik, Pratul P. Srinivasan, Ben Mildenhall, Sara Fridovich-Keil, Nithin Raghavan, Utkarsh Singhal, Ravi Ramamoorthi, Jonathan T. Barron, Ren Ng, &ldquo;Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains&rdquo;, NeurIPS, 2020.</p>
+<p>[2] Jon Barron - Understanding and Extending Neural Radiance Fields, <a href="https://www.youtube.com/watch?v=HfJpQCBTqZs" target="_blank" class="italic underline underline-offset-4 transition-all hover:font-semibold hover:opacity-75">Link</a>, Accessed on March 26, 2025.</p>
+
+
+      </div>
+    </article>
+  </div>
+  <button aria-label="Back to Top"
+    class="z-90 fixed bottom-8 end-4 flex h-8 w-8 translate-y-28 items-center justify-center rounded-full border-2 border-transparent bg-primary-foreground text-3xl opacity-0 transition-all duration-300 hover:border-border/75 data-[show=true]:translate-y-0 data-[show=true]:opacity-100 sm:end-8 sm:h-12 sm:w-12"
+    data-show="true" id="to-top-btn"><svg aria-hidden="true" class="h-4 w-4" fill="none" focusable="false"
+      stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4.5 15.75l7.5-7.5 7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg> </button>
+
 </div><footer class="mx-auto mt-24 w-full">
 
     <div class="border-t border-border pt-5">
