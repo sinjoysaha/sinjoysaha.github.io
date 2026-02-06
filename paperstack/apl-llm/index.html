@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><title>Active Preference Learning for Large Language Models • Sinjoy Saha</title>
+<title>Active Preference Learning for Large Language Models • Sinjoy Saha</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 <meta name="description" content="">
 <meta name="author" content="map[avatar:profilePic.jpg bio:MS CSE @ Penn State catchphrase:Building ideas into reality! contact:map[list:[map[class:email icon:fas fa-envelope title:Email url:mailto:sinjoy.saha@psu.edu]]] details:map[list:[map[class:location icon:fa-map-marker title:State College, PA, USA]]] email:sinjoy.saha@psu.edu featureurl:https://linkedin.com/in/sinjoysaha name:Sinjoy Saha resumelink:https://drive.google.com/file/d/1NC7lXQ5rxlFgp1Jw5nFp_veAGZIAcJWa/view social:map[list:[map[class:linkedin icon:fab fa-linkedin title:LinkedIn url:https://linkedin.com/in/sinjoysaha] map[class:twitter icon:fab fa-twitter-square title:Twitter url:https://twitter.com/sinjoysaha] map[class:github icon:fab fa-github title:GitHub url:https://github.com/sinjoysaha] map[class:googelscholar icon:fas fa-graduation-cap title:Scholar url:https://scholar.google.com/citations?user=xNXqCc0AAAAJ&amp;hl=en]]]]">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 
 
 <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
@@ -29,7 +29,7 @@
 
 
  
-<link rel="stylesheet" href="/css/astro.10dcc8cde77abf0f1ea6b7195ded24eb1397a5b38c6c1449d73fadac1b5c2a59.css" integrity="" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/astro.a468143464722e304d1efe7a572b0d57044f60930524c182becc6a63f7a215bf.css" integrity="" crossorigin="anonymous">
 
 
 
@@ -51,7 +51,7 @@
 </script>
     
     <body class='flex justify-center bg-background'>
-        <main class='flex min-h-screen w-screen max-w-[60rem] flex-col items-center px-6 pb-10 pt-7 font-satoshi text-[0.92rem] leading-relaxed sm:px-10 lg:px-10'><header class="mb-12 flex w-full flex-wrap pb-3 text-sm sm:flex-nowrap sm:justify-start">
+        <main class='flex min-h-screen w-screen max-w-[80rem] flex-col items-center px-6 pb-10 pt-7 font-satoshi text-[0.92rem] leading-relaxed sm:px-10 lg:px-10'><header class="mb-12 flex w-full flex-wrap pb-3 text-sm sm:flex-nowrap sm:justify-start">
     <nav class="relative mx-auto flex w-full items-center justify-between sm:flex sm:items-center" aria-label="global">
         <a class="inherit flex-none text-xl font-semibold" href="https://drive.google.com/file/d/1NC7lXQ5rxlFgp1Jw5nFp_veAGZIAcJWa/view" target="_blank" aria-label="Brand">resume</a>
 
@@ -179,7 +179,7 @@
 <li>Model - The paper only runs experiments on GPT-2 and Pythia (GPT-3-like) models. These are mainly decoder-based models. For the sake of completeness, it would be interesting to experiment with encoder-decoder models too.</li>
 <li>Closed model as oracle - Since the paper mainly uses GPT-4 as the oracle for generating answers, the effects of the oracle cannot be studied very well. Also, closed models come at a much higher cost which might be economical for running multiple iterations of active learning. Also, the paper compares the choice of oracle by measuring the average self-consistency of only GPT-3.5 and GPT-4. However, a comparison including open models would have been better.</li>
 <li>Prompts - The authors only provide two prompts for the two datasets and thus the effect of prompt engineering is not well-studied.</li>
-<li>Comparative Analysis - The paper mainly compares the proposed acquisition functions predictive entropy, preference certainty and hybrid (PE + PC) with the baseline of random sampling. No comparison with other widely used sampling strategies is shown. The paper points out that the Reward rAnked Fine-Tuning (RaFT) \cite{dong2023raft} technique consults the oracle on every data point before filtering. However, no comparative study has been done with previous AL methods for fine-tuning LLMs.</li>
+<li>Comparative Analysis - The paper mainly compares the proposed acquisition functions predictive entropy, preference certainty and hybrid (PE + PC) with the baseline of random sampling. No comparison with other widely used sampling strategies is shown. The paper points out that the Reward rAnked Fine-Tuning (RaFT) <a href="#references">[2]</a> technique consults the oracle on every data point before filtering. However, no comparative study has been done with previous AL methods for fine-tuning LLMs.</li>
 </ul>
 <p>Despite some drawbacks, the paper proposes a novel method of leveraging Direct-Preference Optimization (DPO) for active learning of the fine-tuning of LLMs.</p>
 <h2 id="references">References</h2>
@@ -203,7 +203,7 @@
         <div
             class="flex flex-col items-center gap-y-3 sm:flex sm:flex-row sm:items-center sm:justify-between sm:gap-y-0">
             <div class="flex gap-x-4 text-sm text-muted-foreground">
-                <p>© 2025. Built using <a href="https://gohugo.io/" class="underline">Hugo</a>. Inspired from
+                <p>© 2026. Built using <a href="https://gohugo.io/" class="underline">Hugo</a>. Inspired from
                     <a href="https://github.com/srleom/astro-theme-resume" class="underline">astro-theme-resume</a>.
                 </p>
             </div>
@@ -239,11 +239,11 @@
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TDS38QPM4D"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-gtag('config', 'G-TDS38QPM4D');
+    gtag('config', 'G-TDS38QPM4D');
 </script>
 
 

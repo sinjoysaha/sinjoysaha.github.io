@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Active Learning on Sinjoy Saha</title>
-    <link>http://localhost:1313/tags/active-learning/</link>
+    <link>https://sinjoysaha.github.io/tags/active-learning/</link>
     <description>Recent content in Active Learning on Sinjoy Saha</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>sinjoy.saha@psu.edu (Sinjoy Saha)</managingEditor>
     <webMaster>sinjoy.saha@psu.edu (Sinjoy Saha)</webMaster>
     <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/active-learning/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sinjoysaha.github.io/tags/active-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Active Preference Learning for Large Language Models</title>
-      <link>http://localhost:1313/paperstack/apl-llm/</link>
+      <link>https://sinjoysaha.github.io/paperstack/apl-llm/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate><author>sinjoy.saha@psu.edu (Sinjoy Saha)</author>
-      <guid>http://localhost:1313/paperstack/apl-llm/</guid>
+      <guid>https://sinjoysaha.github.io/paperstack/apl-llm/</guid>
       <description>&lt;p&gt;William Muldrew, Peter Hayes, Mingtian Zhang, David Barber, &amp;ldquo;Active preference learning for large language models&amp;rdquo;, ICML, 2024. &lt;a href=&#34;#references&#34;&gt;[1]&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-problem-does-this-paper-try-to-solve-ie-its-motivation&#34;&gt;What problem does this paper try to solve, i.e., its motivation&lt;/h2&gt;&#xA;&lt;p&gt;The fine-tuning techniques for aligning large language models (LLMs) require careful consideration and effective use of human resources where reinforcement learning is used (RLHF). Prior works have also used feedback from AI models (RLAIF) to align smaller language models. However, these methods are quite complex and unstable. Direct Preference Optimization (DPO) is a much simpler and more stable technique for aligning LLMs. Methods have also been developed using active learning to improve fine-tuning LLMs. The main problems with these previous methods of fine-tuning and aligning LLMs using active learning are as follows:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Learning Active Learning from Data</title>
-      <link>http://localhost:1313/paperstack/lal/</link>
+      <link>https://sinjoysaha.github.io/paperstack/lal/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate><author>sinjoy.saha@psu.edu (Sinjoy Saha)</author>
-      <guid>http://localhost:1313/paperstack/lal/</guid>
+      <guid>https://sinjoysaha.github.io/paperstack/lal/</guid>
       <description>&lt;p&gt;Ksenia Konyushkova, Raphael Sznitman, Pascal Fua, &amp;ldquo;Learning active learning from data&amp;rdquo;, NeurIPS, 2017. &lt;a href=&#34;#references&#34;&gt;[1]&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-problem-does-this-paper-try-to-solve-ie-its-motivation&#34;&gt;What problem does this paper try to solve, i.e., its motivation&lt;/h2&gt;&#xA;&lt;p&gt;The main problems this paper tries to solve can be summarized as follows:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Prior active learning methods use a combination of hand-crafted heuristics and are restricted to these existing techniques.&lt;/li&gt;&#xA;&lt;li&gt;The assessment of the classification performance of previous AL methods is unreliable as it highly depends on the scarce annotated data.&lt;/li&gt;&#xA;&lt;li&gt;The paper also highlights the problem of uncertainty sampling (US), the most popular sampling criterion, in unbalanced datasets. The more imbalanced the classes are in a dataset, the further from the optimum choice made by US. Although query selection procedures can account for statistical properties of datasets and classifiers, for complex scenarios with many factors such as label noise, outliers and shape of distribution, there is no easy way to take into account all possible factors.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;how-does-it-solve-the-problem&#34;&gt;How does it solve the problem?&lt;/h2&gt;&#xA;&lt;p&gt;This paper attempts to solve the above problems using two features.&lt;/p&gt;</description>
     </item>
     <item>
       <title>RALF: A Reinforced Active Learning Formulation for Object Class Recognition</title>
-      <link>http://localhost:1313/paperstack/ralf/</link>
+      <link>https://sinjoysaha.github.io/paperstack/ralf/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate><author>sinjoy.saha@psu.edu (Sinjoy Saha)</author>
-      <guid>http://localhost:1313/paperstack/ralf/</guid>
+      <guid>https://sinjoysaha.github.io/paperstack/ralf/</guid>
       <description>&lt;p&gt;Sandra Ebert, Mario Fritz, Bernt Schiele, &amp;ldquo;RALF: A Reinforced Active Learning Formulation for Object Class Recognition&amp;rdquo;, CVPR, 2012. &lt;a href=&#34;#references&#34;&gt;[1]&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-problem-does-this-paper-try-to-solve-ie-its-motivation&#34;&gt;What problem does this paper try to solve, i.e., its motivation&lt;/h2&gt;&#xA;&lt;p&gt;This paper addressed the challenge of balancing the selection of informative samples in pool-based active learning, where the entire dataset is treated as a pool, and samples are selected based on given criteria, for labeling by an oracle. The paper highlights the &amp;ldquo;exploitation-exploration dilemma&amp;rdquo; which often arises when only a single criterion is used for selecting examples from the data pool. The main issues with using either pure exploitative or pure explorative criteria can be summarized as follows:&lt;/p&gt;</description>
     </item>
   </channel>

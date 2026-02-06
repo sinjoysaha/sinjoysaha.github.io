@@ -1464,6 +1464,14 @@ body {
     width: 20%
 }
 
+.w-1\/12 {
+    width: 8%
+}
+
+.w-11\/12 {
+    width: 92%
+}
+
 .w-10 {
     width: 2.5rem
 }
@@ -1514,6 +1522,10 @@ body {
 
 .max-w-\[60rem\] {
     max-width: 60rem
+}
+
+.max-w-\[80rem\] {
+    max-width: 80rem
 }
 
 .flex-none {
@@ -2273,6 +2285,10 @@ body {
         width: 50%
     }
 
+    .sm\:w-1\/4 {
+        width: 25%
+    }
+
     .sm\:w-12 {
         width: 3rem
     }
@@ -2366,6 +2382,14 @@ body {
         left: -4rem
     }
 
+    .md\:pr-16 {
+        padding-right: 4rem
+    }
+
+    .md\:ml-16 {
+        margin-left: 4rem
+    }
+
     .md\:mb-0 {
         margin-bottom: 0
     }
@@ -2376,6 +2400,22 @@ body {
 
     .md\:w-2\/3 {
         width: 66.666667%
+    }
+
+    .md\:w-1\/4 {
+        width: 25%
+    }
+
+    .md\:w-3\/4 {
+        width: 75%
+    }
+
+    .md\:w-1\/12 {
+        width: 8%
+    }
+
+    .md\:w-11\/12 {
+        width: 92%
     }
 
     .md\:flex-row {

@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Sinjoy Saha</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://sinjoysaha.github.io/tags/</link>
     <description>Recent content in Tags on Sinjoy Saha</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>sinjoy.saha@psu.edu (Sinjoy Saha)</managingEditor>
     <webMaster>sinjoy.saha@psu.edu (Sinjoy Saha)</webMaster>
     <lastBuildDate>Thu, 27 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sinjoysaha.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computer Vision</title>
-      <link>http://localhost:1313/tags/computer-vision/</link>
+      <link>https://sinjoysaha.github.io/tags/computer-vision/</link>
       <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate><author>sinjoy.saha@psu.edu (Sinjoy Saha)</author>
-      <guid>http://localhost:1313/tags/computer-vision/</guid>
+      <guid>https://sinjoysaha.github.io/tags/computer-vision/</guid>
       <description></description>
     </item>
     <item>
       <title>View Synthesis</title>
-      <link>http://localhost:1313/tags/view-synthesis/</link>
+      <link>https://sinjoysaha.github.io/tags/view-synthesis/</link>
       <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate><author>sinjoy.saha@psu.edu (Sinjoy Saha)</author>
-      <guid>http://localhost:1313/tags/view-synthesis/</guid>
+      <guid>https://sinjoysaha.github.io/tags/view-synthesis/</guid>
       <description></description>
     </item>
     <item>
       <title>Active Learning</title>
-      <link>http://localhost:1313/tags/active-learning/</link>
+      <link>https://sinjoysaha.github.io/tags/active-learning/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate><author>sinjoy.saha@psu.edu (Sinjoy Saha)</author>
-      <guid>http://localhost:1313/tags/active-learning/</guid>
+      <guid>https://sinjoysaha.github.io/tags/active-learning/</guid>
       <description></description>
     </item>
   </channel>
